@@ -58,3 +58,17 @@ OptiFineの「Custom Item Texture」を利用し、適用する。
 6: 火継ぎの魂振(the Soulbounded Firelinker)
 7: やつしの狩人(the Hunter)
 8: 持たざる者(no holded)
+
+
+・各パッケージの一覧
+　1. function（関数）
+　　calc、tick-process、trigger-process: 毎tick処理させるfunctionが多い
+　　ship: 職業のプレイニシャライザ・イニシャライザが職業別に分割されて導入されている。
+　　skill: スキル毎にfunctionが書かれている。
+　2. predicate（条件文）
+　　色々と条件文が書かれている。
+　3. tags（タグ）
+　　だいたいサブルーチンのライブラリ化が目的
+
+
+
