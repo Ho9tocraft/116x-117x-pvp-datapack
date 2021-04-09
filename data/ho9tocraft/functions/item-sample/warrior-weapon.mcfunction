@@ -1,0 +1,2 @@
+#戦士の初期装備「バトルアクス」
+execute as @p at @s run give @s iron_axe{display:{Name:'{"text":"バトルアクス","color":"white","bold":true,"italic":false}'},HideFlags:5,Unbreakable:1b,citTexture:Warrior,Enchantments:[{id:"minecraft:sharpness",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-0.875,Operation:2,UUID:[I;-884846305,2119323340,-1790249334,1916373548],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:11,Operation:0,UUID:[I;1717798563,1303530717,-1828626875,-1066834565],Slot:"mainhand"}]} 1

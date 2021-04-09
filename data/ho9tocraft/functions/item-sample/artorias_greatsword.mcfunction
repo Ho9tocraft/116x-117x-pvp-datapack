@@ -1,0 +1,1 @@
+execute as @p at @s run give @s netherite_sword{display:{Name:'{"text":"アルトリウスの大剣","color":"dark_blue","bold":true,"italic":false}'},HideFlags:1,citTexture:Artorias,Enchantments:[{id:"minecraft:sharpness",lvl:6s},{id:"minecraft:sweeping",lvl:4s},{id:"minecraft:unbreaking",lvl:4s}]} 1

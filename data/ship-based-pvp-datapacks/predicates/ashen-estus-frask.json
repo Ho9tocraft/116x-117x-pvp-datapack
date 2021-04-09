@@ -1,0 +1,15 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "flags": {
+            "is_sneaking": true
+        },
+        "equipment": {
+            "mainhand": {
+                "item": "minecraft:light_blue_dye",
+                "nbt": "{citTexture:Estus}"
+            }
+        }
+    }
+}
