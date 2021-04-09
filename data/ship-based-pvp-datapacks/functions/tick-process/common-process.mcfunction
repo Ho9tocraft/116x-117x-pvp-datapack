@@ -42,8 +42,8 @@ execute as @a[scores={ship-num=1..5,skill2-ct=0},predicate=ship-based-pvp-datapa
 execute as @a[scores={ship-num=1..3,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 execute as @a[scores={ship-num=4..5,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 20
 #エストの灰瓶を1個減らす
-execute as @a[scores={ship-num=1..3,skill2-ct=30},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
-execute as @a[scores={ship-num=4..5,skill2-ct=20},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
+execute as @a[scores={ship-num=1..3,skill2-ct=30},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
+execute as @a[scores={ship-num=4..5,skill2-ct=20},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
 #なくなり次第CTを600に固定する
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=1..5},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 600
 
@@ -69,7 +69,7 @@ execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapac
 #CTを30(魔法使い系20)にする
 execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 #エストの灰瓶を1個減らす
-execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
+execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
 #なくなり次第CTを600に固定する
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=8..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 600
 

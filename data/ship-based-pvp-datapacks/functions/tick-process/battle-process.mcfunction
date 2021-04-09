@@ -14,11 +14,11 @@ execute store result bossbar minecraft:battle_time value run scoreboard players 
 
 #スコア計測
 #デスカ計測 赤チーム
-execute if score #Helper CombatMode matches 2 as @a[team=Blue,scores={killcount-Temp=1}] at @s run scoreboard players add #Helper point-red 1
-execute if score #Helper CombatMode matches 2 as @a[team=Blue,scores={killcount-Temp=1}] at @s run scoreboard players add #Helper killC-bothCorner 1
+execute if score #Helper CombatMode matches 2 as @a[team=Blue,scores={killcount-Temp=1,respawn-time=9}] at @s run scoreboard players add #Helper point-red 1
+execute if score #Helper CombatMode matches 2 as @a[team=Blue,scores={killcount-Temp=1,respawn-time=9}] at @s run scoreboard players add #Helper killC-bothCorner 1
 #デスカ計測 青チーム
-execute if score #Helper CombatMode matches 2 as @a[team=Red,scores={killcount-Temp=1}] at @s run scoreboard players add #Helper point-blue 1
-execute if score #Helper CombatMode matches 2 as @a[team=Red,scores={killcount-Temp=1}] at @s run scoreboard players add #Helper killC-bothCorner 1
+execute if score #Helper CombatMode matches 2 as @a[team=Red,scores={killcount-Temp=1,respawn-time=9}] at @s run scoreboard players add #Helper point-blue 1
+execute if score #Helper CombatMode matches 2 as @a[team=Red,scores={killcount-Temp=1,respawn-time=9}] at @s run scoreboard players add #Helper killC-bothCorner 1
 
 #リスポーン処理
 execute if score #Helper CombatMode matches 2 run function ship-based-pvp-datapacks:trigger-process/respawn-process
