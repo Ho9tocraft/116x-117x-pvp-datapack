@@ -1,4 +1,3 @@
-#素性: 騎士専用スキル「カーサスの緋刃」
 #攻撃力UPⅢ 180 seconds
 execute as @a[scores={ship-num=2,skill3-ct=0,FocusPoint=35..},predicate=ship-based-pvp-datapacks:carthus-rouge] at @s run effect give @s strength 60 2 false
 #Consuming FP: 35

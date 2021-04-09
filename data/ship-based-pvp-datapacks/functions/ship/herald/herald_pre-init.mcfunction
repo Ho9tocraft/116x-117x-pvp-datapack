@@ -5,3 +5,4 @@ execute as @s at @s run scoreboard players set @s ship-num 4
 playsound entity.player.levelup player @s ~ ~ ~ 100 1.0 0.5
 tellraw @s ["",{"text":"\u8077\u696d\u3092\u300c"},{"text":"\u4f1d\u4ee4","color":"green"},{"text":"\u300d\u306b\u8a2d\u5b9a\u3057\u307e\u3057\u305f\uff01"}]
 
+

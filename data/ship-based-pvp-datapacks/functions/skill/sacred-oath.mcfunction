@@ -1,4 +1,4 @@
-#固い誓い（Sacred Path）
+#固い誓い（Sacred Oath）
 
 #1: 抽出しつつ半径計算。4.25m
 execute as @a[scores={skill3-ct=0,ship-num=1,FocusPoint=65..},predicate=ship-based-pvp-datapacks:sacred-oath,team=Red] at @s as @a[distance=..4.25,team=Red] at @s run effect give @s resistance 30 3 false
