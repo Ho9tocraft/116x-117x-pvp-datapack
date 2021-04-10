@@ -14,6 +14,6 @@ execute as @a[scores={ship-num=3}] at @s run replaceitem entity @s hotbar.1 oran
 #ashen estus
 execute as @a[scores={ship-num=3}] at @s run replaceitem entity @s hotbar.2 light_blue_dye{display:{Name:'{"text":"エストの灰瓶","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow","bold":true,"italic":false}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"FPを回復","color":"white"}]']},HideFlags:1,citTexture:Estus,Enchantments:[{}]} 1
 #unique skill
-execute as @a[scores={ship-num=3}] at @s run replaceitem entity @s hotbar.3 blaze_rod{display:{Name:'{"text":"ウォークライ","color":"red","bold":true,"italic":false}'},HideFlags:1,citTexture:Warcry,Enchantments:[{id:"minecraft:unbreaking",lvl:1s}]} 1
+execute as @a[scores={ship-num=3}] at @s run replaceitem entity @s hotbar.3 blaze_rod{display:{Name:'{"text":"ウォークライ","color":"red","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow"}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"自己強化しつつ近くの敵を怯ませる","color":"yellow"}]','[{"text":"CT: ","color":"gray","bold":true,"italic":false},{"text":"60 seconds","color":"yellow"}]']},HideFlags:1,citTexture:Warcry,Enchantments:[{id:"minecraft:unbreaking",lvl:1s}]} 1
 #focus point
 execute as @a[scores={ship-num=3}] at @s run scoreboard players set @s FocusPoint 100

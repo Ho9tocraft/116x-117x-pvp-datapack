@@ -18,6 +18,7 @@ scoreboard objectives setdisplay sidebar.team.red health-red
 scoreboard objectives setdisplay sidebar.team.blue health-blue
 
 effect give @a regeneration 30 9 true
+effect give @a[gamemode=!spectator] health_boost 1000000 4 true
 effect give @a saturation 600 9 true
 give @a[gamemode=!spectator] cooked_beef 64
 clear @a[scores={ship-num=2}] cooked_beef 48

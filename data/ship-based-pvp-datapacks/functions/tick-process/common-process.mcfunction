@@ -74,12 +74,12 @@ execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapac
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=8..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 600
 
 
-#FPの自動回復: FPは勝手に回復する。しかし、回復する確率は25%/sec(やつしの狩人のみ50%/sec)。必ずしも回復するとは限らない。
+#FPの自動回復: FPは勝手に回復する。しかし、回復する確率は25%/sec(FPが重要すぎる要素である火継ぎの魂振・やつしの狩人のみ50%/sec、魔法使い系は33％/sec)。必ずしも回復するとは限らない。
 execute as @a[scores={ship-num=1..2,FocusPoint=..149},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=3,FocusPoint=..99},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
-execute as @a[scores={ship-num=4,FocusPoint=..199},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
-execute as @a[scores={ship-num=5,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
-execute as @a[scores={ship-num=6,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=4,FocusPoint=..199},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=5,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=6,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=7,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=8,FocusPoint=..99},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
 

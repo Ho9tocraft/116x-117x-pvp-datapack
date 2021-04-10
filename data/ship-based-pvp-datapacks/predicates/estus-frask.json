@@ -8,7 +8,7 @@
         "equipment": {
             "mainhand": {
                 "item": "minecraft:orange_dye",
-                "nbt": "{}"
+                "nbt": "{citTexture:Estus}"
             }
         }
     }

@@ -16,7 +16,9 @@ execute as @a[scores={ship-num=4}] at @s run replaceitem entity @s hotbar.1 oran
 #ashen estus(slot 2)
 execute as @a[scores={ship-num=4}] at @s run replaceitem entity @s hotbar.2 light_blue_dye{display:{Name:'{"text":"エストの灰瓶","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow","bold":true,"italic":false}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"FPを回復","color":"white"}]']},HideFlags:1,citTexture:Estus,Enchantments:[{}]} 7
 #tears of denial(Unique skill, slot 3)
-#execute as @a[scores={ship-num=4}] at @s run replaceitem entity @s hotbar.3 
+execute as @a[scores={ship-num=4}] at @s run replaceitem entity @s hotbar.3 ghast_tear{display:{Name:'{"text":"惜別の涙","color":"gold","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow"}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"即死級ダメージを受けた際に踏みとどまる","color":"yellow"}]','[{"text":"CT: ","color":"gray","bold":true,"italic":false},{"text":"120 seconds","color":"yellow"}]']},citTexture:Denial} 1
+#FP
+execute as @a[scores={ship-num=4}] at @s run scoreboard players set @s FocusPoint 200
 
 
 

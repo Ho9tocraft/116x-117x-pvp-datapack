@@ -3,6 +3,7 @@
 #CTはいずれも200 seconds
 
 #1. 自バフ
+execute as @a[scores={ship-num=3,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run tellraw @s {"text": "test"}
 execute as @a[scores={ship-num=3,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run effect give @s strength 15 3 false
 execute as @a[scores={ship-num=8,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run effect give @s strength 30 2 false
 
@@ -24,5 +25,5 @@ execute as @a[scores={ship-num=8,skill3-ct=0,FocusPoint=20..},predicate=ship-bas
 #3. CT/FP消費処理
 execute as @a[scores={ship-num=3,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players remove @s FocusPoint 20
 execute as @a[scores={ship-num=8,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players remove @s FocusPoint 20
-execute as @a[scores={ship-num=3,skill3-ct=0},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 200
-execute as @a[scores={ship-num=8,skill3-ct=0},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 200
+execute as @a[scores={ship-num=3,skill3-ct=0},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 60
+execute as @a[scores={ship-num=8,skill3-ct=0},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 60
