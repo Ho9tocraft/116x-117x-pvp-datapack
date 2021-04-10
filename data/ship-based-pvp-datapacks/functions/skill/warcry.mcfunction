@@ -3,7 +3,6 @@
 #CTはいずれも200 seconds
 
 #1. 自バフ
-execute as @a[scores={ship-num=3,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run tellraw @s {"text": "test"}
 execute as @a[scores={ship-num=3,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run effect give @s strength 15 3 false
 execute as @a[scores={ship-num=8,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run effect give @s strength 30 2 false
 

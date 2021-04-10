@@ -18,8 +18,14 @@ scoreboard objectives add point-blue dummy
 scoreboard objectives add killDetect dummy
 #両コーナーキル数(ファーストキル発生検知に使用)
 scoreboard objectives add killC-bothCorner dummy
-#戦闘モード(0か1、有効時は1)
+#戦闘モード(-1～3)
 scoreboard objectives add CombatMode dummy
+#ステージ決定
+scoreboard objectives add stage-sel-result dummy
+#ステージセレクトランダマイザ
+scoreboard objectives add stage-sel-rand dummy
+#Teamセレクトランダマイザ
+scoreboard objectives add team-sel-rand dummy
 #△Dummy Player[Helper]
 
 #▽Player Owned
@@ -47,8 +53,11 @@ scoreboard objectives add skill3-ct dummy
 scoreboard objectives add stamina food
 #盾受け
 scoreboard objectives add shield-guard minecraft.custom:damage_blocked_by_shield
+scoreboard objectives add shield-guard-sum dummy
 #攻撃観測
 scoreboard objectives add attack-det minecraft.custom:damage_dealt
+#Teamセレクト結果（一時的）
+scoreboard objectives add team-sel-rd-res dummy
 #△Player Owned
 
 #一応セット
@@ -88,6 +97,9 @@ scoreboard players set #Helper killC-bothCorner 0
 scoreboard players set #Helper killDetect 0
 #戦闘モードは-1(Before Starting),0(Before PrepareTime),1(PrepareTime),2(BattleTime),3(ResultTime)に別れている。-1が初期値
 scoreboard players set #Helper CombatMode -1
+#ステージデータのリセットも必ず
+scoreboard players set #Helper stage-sel-result -1
+scoreboard players set #Helper stage-sel-rand 0
 #△Dummy Player[Helper] Initialization
 
 #リストア・イニシャライザ

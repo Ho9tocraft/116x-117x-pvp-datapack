@@ -40,3 +40,4 @@ effect clear @a hunger
 effect clear @a wither
 effect give @a saturation 1 9 false
 effect give @a instant_health 1 9 false
+gamemode adventure @a

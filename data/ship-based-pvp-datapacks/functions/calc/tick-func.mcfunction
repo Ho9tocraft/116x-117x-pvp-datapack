@@ -1,6 +1,9 @@
 #tick処理です
 #tick-second converter(Count Up)
 execute if score #Helper tick-sec_conv < #Helper tick-max run scoreboard players add #Helper tick-sec_conv 1
+#tickloop-scores
+execute if score #Helper stage-sel-rand matches ..19 run scoreboard players add #Helper stage-sel-rand 1
+execute if score #Helper stage-sel-rand matches 20 run scoreboard players set #Helper stage-sel-rand 0
 #battle mode: ct&fp display
 execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=1..}] at @s run title @s actionbar ["",{"text":"\u30b9\u30ad\u30eb1CT","color":"gold"},{"text":":"},{"score":{"name":"@s","objective":"skill1-ct"},"color":"red"},{"text":" \u30b9\u30ad\u30eb2CT","color":"gold"},{"text":":"},{"score":{"name":"@s","objective":"skill2-ct"},"color":"red"},{"text":" \u30b9\u30ad\u30eb3CT","color":"gold"},{"text":":"},{"score":{"name":"@s","objective":"skill3-ct"},"color":"red"},{"text":" FP","color":"aqua"},{"text":":"},{"score":{"name":"@s","objective":"FocusPoint"},"color":"blue"}]
 #battle mode: non-ob stamina regen

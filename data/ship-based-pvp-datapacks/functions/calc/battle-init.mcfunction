@@ -1,5 +1,7 @@
 function #ship-based-pvp-datapacks:call-ship-initializer
+gamemode spectator @a[scores={ship-num=..0}]
 gamemode adventure @a[scores={ship-num=1..}]
+function ship-based-pvp-datapacks:trigger-process/respawn-trigger
 bossbar add prepare_time {"text": "準備時間"}
 bossbar set minecraft:prepare_time color blue
 bossbar set minecraft:prepare_time max 30
@@ -17,6 +19,8 @@ scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay sidebar.team.red health-red
 scoreboard objectives setdisplay sidebar.team.blue health-blue
 
+scoreboard players set @a shield-guard 0
+scoreboard players set @a shield-guard-sum 0
 effect give @a regeneration 30 9 true
 effect give @a[gamemode=!spectator] health_boost 1000000 4 true
 effect give @a saturation 600 9 true
