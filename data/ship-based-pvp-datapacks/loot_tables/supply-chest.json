@@ -1,0 +1,124 @@
+{
+    "type": "chest",
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "emerald",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Emerald Token\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},citTexture:Token}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 8,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "weight":500,
+                    "quality":4
+                },
+                {
+                    "type": "item",
+                    "name": "quartz",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Quartz Token\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},citTexture:Token}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 4,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "weight":250,
+                    "quality":2
+                },
+                {
+                    "type": "item",
+                    "name": "bow",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments:[{id:\"minecraft:power\",lvl:6s},{id:\"minecraft:unbreaking\",lvl:4s}]}",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.125
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments:[{id:\"minecraft:power\",lvl:6s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:flame\",lvl:2s}]}","conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments:[{id:\"minecraft:power\",lvl:10s}],Damage:384}",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.0625
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:2s}]}",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.5625
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:arrow",
+                    "weight": 400,
+                    "quality": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 4,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "netherite_scrap",
+                    "weight": 1,
+                    "quality": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"The Ember Token\",\"color\":\"blue\",\"bold\":true,\"italic\":false}'},citTexture:Token}"
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

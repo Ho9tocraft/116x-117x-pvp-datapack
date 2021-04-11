@@ -21,6 +21,8 @@ scoreboard objectives setdisplay sidebar.team.blue health-blue
 
 scoreboard players set @a shield-guard 0
 scoreboard players set @a shield-guard-sum 0
+scoreboard players set @a killcount-Temp 0
+scoreboard players set @a respawn-time -1
 effect give @a regeneration 30 9 true
 effect give @a[gamemode=!spectator] health_boost 1000000 4 true
 effect give @a saturation 600 9 true

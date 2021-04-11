@@ -1,5 +1,6 @@
 #リスポーンクールタイムの処理です。
 #1. リスポーンセット
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=-1},gamemode=adventure] at @s run tellraw @s {"translate":"KillCount-Temp: %s","with": [{"score":{"name": "@s","objective": "killcount-Temp"}}]}
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=-1},gamemode=adventure] at @s run scoreboard players set @s respawn-time 10
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s run gamemode spectator @s
 
