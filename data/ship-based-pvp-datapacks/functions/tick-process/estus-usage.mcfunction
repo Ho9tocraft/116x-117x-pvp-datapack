@@ -9,10 +9,10 @@
 execute as @a[scores={ship-num=1..5,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run effect give @s instant_health 1 3 true
 #エスト回復エフェクト
 execute as @a[scores={ship-num=1..5,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run particle dust 0.953 0.596 0.000 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
+#エスト瓶を1個減らす
+execute as @a[scores={ship-num=1..5,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
 #CTを20にする
 execute as @a[scores={ship-num=1..5,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run scoreboard players set @s skill1-ct 20
-#エスト瓶を1個減らす
-execute as @a[scores={ship-num=1..5,skill1-ct=20},predicate=ship-based-pvp-datapacks:estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
 #なくなり次第CTを600固定にする(戦闘中のみ)
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=1..5},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 600
 
@@ -21,10 +21,10 @@ execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=1..5},nbt
 execute as @a[scores={ship-num=7..,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run effect give @s instant_health 1 3 true
 #エスト回復エフェクト
 execute as @a[scores={ship-num=7..,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run particle dust 0.953 0.596 0.000 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
+#エスト瓶を1個減らす
+execute as @a[scores={ship-num=7..,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
 #CTを20にする
 execute as @a[scores={ship-num=7..,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run scoreboard players set @s skill1-ct 20
-#エスト瓶を1個減らす
-execute as @a[scores={ship-num=7..,skill1-ct=20},predicate=ship-based-pvp-datapacks:estus-frask] at @s run clear @s orange_dye{citTexture:Estus} 1
 #なくなり次第CTを600固定にする
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=7..},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 600
 
@@ -38,12 +38,12 @@ execute as @a[scores={ship-num=4,skill2-ct=0,FocusPoint=201..},predicate=ship-ba
 execute as @a[scores={ship-num=5,skill2-ct=0,FocusPoint=301..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 300
 #灰エスト回復エフェクト
 execute as @a[scores={ship-num=1..5,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run particle dust 0.698 0.796 0.894 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
+#エストの灰瓶を1個減らす
+execute as @a[scores={ship-num=1..3,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
+execute as @a[scores={ship-num=4..5,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
 #CTを30(魔法使い系20)にする
 execute as @a[scores={ship-num=1..3,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 execute as @a[scores={ship-num=4..5,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 20
-#エストの灰瓶を1個減らす
-execute as @a[scores={ship-num=1..3,skill2-ct=30},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
-execute as @a[scores={ship-num=4..5,skill2-ct=20},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
 #なくなり次第CTを600に固定する
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=1..5},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 600
 
@@ -53,10 +53,10 @@ execute as @a[scores={ship-num=6,skill1-ct=0},predicate=ship-based-pvp-datapacks
 execute as @a[scores={ship-num=6,skill1-ct=0,FocusPoint=251..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 250
 #灰エスト回復エフェクト
 execute as @a[scores={ship-num=6,skill1-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run particle dust 0.698 0.796 0.894 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
+#エストの灰瓶を1個減らす
+execute as @a[scores={ship-num=6,skill1-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
 #CTを40にする
 execute as @a[scores={ship-num=6,skill1-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill1-ct 40
-#エストの灰瓶を1個減らす
-execute as @a[scores={ship-num=6,skill1-ct=40},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
 #なくなり次第CTを600に固定する
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=6},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 600
 
@@ -66,9 +66,9 @@ execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapac
 execute as @a[scores={ship-num=8,skill2-ct=0,FocusPoint=101..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 100
 #灰エスト回復エフェクト
 execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run particle dust 0.698 0.796 0.894 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
-#CTを30(魔法使い系20)にする
-execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 #エストの灰瓶を1個減らす
 execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run clear @s light_blue_dye{citTexture:Estus} 1
+#CTを30(魔法使い系20)にする
+execute as @a[scores={ship-num=8..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 #なくなり次第CTを600に固定する
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=8..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 600

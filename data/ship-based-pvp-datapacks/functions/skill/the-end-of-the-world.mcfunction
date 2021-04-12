@@ -94,9 +94,10 @@ execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-ba
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run particle dust 0.698 0.133 0.133 4 ^ ^ ^28.5 1.5 1.5 1.5 1 300 normal @a
 #5. 自身にバフ&デメリットデバフ
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s strength 30 3 false
-execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s resistance 30 2 false
-execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s wither 50 9 false
+execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s resistance 15 2 false
+execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s wither 40 9 false
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s instant_damage 1 3 false
+execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s blindness 40 255 false
 #6. FP消費（150）&CT
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=150..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players remove @s FocusPoint 150
 execute as @a[scores={ship-num=6,skill3-ct=0},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players set @s skill3-ct 45
