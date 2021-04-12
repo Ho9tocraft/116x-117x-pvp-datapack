@@ -22,9 +22,9 @@ execute if score #Helper CombatMode matches 2 if score #Helper killDetect matche
 execute if score #Helper CombatMode matches 2 if score #Helper killDetect matches 0 if score #Helper killC-bothCorner matches 1 run scoreboard players set #Helper killDetect 1
 
 
-#サプライチェスト(未実装)
+#サプライチェスト(部分実装)
 execute if score #Helper CombatMode matches 2 if score #Helper timer_supply matches 1.. run scoreboard players remove #Helper timer_supply 1
-#execute if score #Helper CombatMode matches 2 if score #Helper timer_battle matches 1.. if score #Helper timer_supply matches 0 run function ship-based-pvp-datapacks:trigger-process/supply-process
+execute if score #Helper CombatMode matches 2 if score #Helper timer_battle matches 1.. if score #Helper timer_supply matches 0 run function ship-based-pvp-datapacks:trigger-process/supply-process
 execute if score #Helper CombatMode matches 2 if score #Helper timer_battle matches 1.. if score #Helper timer_supply matches 0 run scoreboard players set #Helper timer_supply 180
 
 

@@ -41,3 +41,4 @@ effect clear @a wither
 effect give @a saturation 1 9 false
 effect give @a instant_health 1 9 false
 gamemode adventure @a
+spawnpoint @a 200 20 254
