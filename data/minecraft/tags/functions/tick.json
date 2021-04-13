@@ -5,6 +5,7 @@
         "ship-based-pvp-datapacks:tick-process/estus-usage",
         "ship-based-pvp-datapacks:tick-process/overed-boost",
         "ship-based-pvp-datapacks:tick-process/auto-regeneration",
-        "ship-based-pvp-datapacks:initialization/restore-init"
+        "ship-based-pvp-datapacks:initialization/restore-init",
+        "ship-based-pvp-datapacks:tick-process/pestilent-mist_secondsprocess"
     ]
 }

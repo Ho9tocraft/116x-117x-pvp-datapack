@@ -5,6 +5,7 @@
         "ship-based-pvp-datapacks:ship/mercenary/mercenary_init",
         "ship-based-pvp-datapacks:ship/warrior/warrior_init",
         "ship-based-pvp-datapacks:ship/soulbounded-firelinker/sb-firelinker_init",
+        "ship-based-pvp-datapacks:ship/sorcerer/sorcerer_init",
         "ship-based-pvp-datapacks:ship/the-harrowed-hunter/the-harrowed-hunter_init"
     ]
 }

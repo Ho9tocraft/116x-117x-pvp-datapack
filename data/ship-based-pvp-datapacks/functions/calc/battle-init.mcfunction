@@ -12,7 +12,7 @@ bossbar set minecraft:battle_time max 600
 bossbar set minecraft:battle_time style notched_12
 bossbar set minecraft:prepare_time players @a
 scoreboard players set #Helper timer_prebattle 30
-scoreboard players set #Helper timer_battle 600
+scoreboard players operation #Helper timer_battle = #Helper timer_battle-max
 scoreboard players set #Helper timer_supply 180
 #試合開始/終了時に表示するものを変更する。
 scoreboard objectives setdisplay sidebar

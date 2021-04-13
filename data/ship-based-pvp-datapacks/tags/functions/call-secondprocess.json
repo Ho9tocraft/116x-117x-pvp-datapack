@@ -2,6 +2,7 @@
     "values": [
         "ship-based-pvp-datapacks:tick-process/common-process",
         "ship-based-pvp-datapacks:tick-process/battle-process",
-        "ship-based-pvp-datapacks:tick-process/skill-cooltime-process"
+        "ship-based-pvp-datapacks:tick-process/skill-cooltime-process",
+        "ship-based-pvp-datapacks:trigger-process/generator"
     ]
 }

@@ -1,6 +1,5 @@
 #リスポーンクールタイムの処理です。
 #1. リスポーンセット
-execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=-1},gamemode=adventure] at @s run tellraw @s {"translate":"KillCount-Temp: %s","with": [{"score":{"name": "@s","objective": "killcount-Temp"}}]}
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=-1},gamemode=adventure] at @s run scoreboard players set @s respawn-time 10
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s run gamemode spectator @s
 
@@ -30,8 +29,8 @@ execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=s
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill3-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s killcount-Temp 0
 execute as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=spectator] at @s run gamemode adventure @s
-execute as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=adventure] at @s run scoreboard players remove @s respawn-time 1
 execute if score #Helper timer_battle matches 1..60 as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=adventure] at @s run effect give @s glowing 60 9 true
+execute as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=adventure] at @s run scoreboard players remove @s respawn-time 1
 
 
 

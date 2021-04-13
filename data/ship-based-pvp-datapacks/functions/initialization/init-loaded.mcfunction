@@ -8,6 +8,12 @@ scoreboard objectives add tick-max dummy
 scoreboard objectives add timer_prebattle dummy
 #戦闘時間の残り時間(10 min)
 scoreboard objectives add timer_battle dummy
+#残り時間の上限(変更可能)
+scoreboard objectives add timer_battle-max dummy
+#上限に比例した半減
+scoreboard objectives add timer_battle-hf dummy
+#上限に比例したクォーター
+scoreboard objectives add timer_battle-qa dummy
 #補給チェストの残り時間(3 min)
 scoreboard objectives add timer_supply dummy
 #赤コーナーの得点(initialization: 0)
@@ -26,6 +32,14 @@ scoreboard objectives add stage-sel-result dummy
 scoreboard objectives add stage-sel-rand dummy
 #Teamセレクトランダマイザ
 scoreboard objectives add team-sel-rand dummy
+#Tokenスポーン時間ループ(鉄)
+scoreboard objectives add token-sp-iron dummy
+#Tokenスポーン時間ループ(金)
+scoreboard objectives add token-sp-gold dummy
+#Tokenスポーン時間ループ(ダイヤ)
+scoreboard objectives add token-sp-diamond dummy
+#Tokenスポーン時間フェーズ
+scoreboard objectives add token-phase dummy
 #△Dummy Player[Helper]
 
 #▽Player Owned
@@ -100,6 +114,10 @@ scoreboard players set #Helper CombatMode -1
 #ステージデータのリセットも必ず
 scoreboard players set #Helper stage-sel-result -1
 scoreboard players set #Helper stage-sel-rand 0
+#戦闘時間は600、変更後の処理も色々と書きたかった
+scoreboard players set #Helper timer_battle-max 600
+scoreboard players set #Helper timer_battle-hf 300
+scoreboard players set #Helper timer_battle-qa 150
 #△Dummy Player[Helper] Initialization
 
 #リストア・イニシャライザ
