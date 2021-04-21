@@ -118,6 +118,8 @@ scoreboard players set #Helper stage-sel-rand 0
 scoreboard players set #Helper timer_battle-max 600
 scoreboard players set #Helper timer_battle-hf 300
 scoreboard players set #Helper timer_battle-qa 150
+#Token Phase
+scoreboard players set #Helper token-phase 0
 #△Dummy Player[Helper] Initialization
 
 #リストア・イニシャライザ
