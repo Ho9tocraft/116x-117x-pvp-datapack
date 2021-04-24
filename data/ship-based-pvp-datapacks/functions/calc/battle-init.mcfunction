@@ -8,8 +8,7 @@ bossbar set minecraft:prepare_time max 30
 bossbar set minecraft:prepare_time style notched_6
 bossbar add battle_time {"text": "残り時間"}
 bossbar set minecraft:battle_time color red
-execute if score #Helper timer_battle-max matches ..1199 run bossbar set minecraft:battle_time max 600
-execute if score #Helper timer_battle-max matches 1200 run bossbar set minecraft:battle_time max 1200
+execute store result bossbar minecraft:battle_time max run scoreboard players get #Helper timer_battle-max
 bossbar set minecraft:battle_time style notched_12
 bossbar set minecraft:prepare_time players @a
 scoreboard players set #Helper timer_prebattle 30
@@ -34,3 +33,4 @@ effect give @a[gamemode=!spectator] health_boost 1000000 4 true
 effect give @a saturation 600 9 true
 give @a[gamemode=!spectator] cooked_beef 64
 clear @a[scores={ship-num=2}] cooked_beef 48
+clear @a[scores={ship-num=8}] cooked_beef 48

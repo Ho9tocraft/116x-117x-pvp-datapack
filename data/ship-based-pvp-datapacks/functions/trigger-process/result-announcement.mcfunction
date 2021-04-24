@@ -38,6 +38,8 @@ scoreboard objectives setdisplay sidebar.team.red
 scoreboard objectives setdisplay sidebar ship-num
 effect clear @a hunger
 effect clear @a wither
+effect clear @a glowing
+effect clear @a luck
 effect give @a saturation 1 9 false
 effect give @a instant_health 1 9 false
 gamemode adventure @a

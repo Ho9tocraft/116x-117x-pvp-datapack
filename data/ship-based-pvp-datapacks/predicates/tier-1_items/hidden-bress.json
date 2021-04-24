@@ -1,0 +1,13 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "item": "dragon_breath",
+            "nbt": "{citTexture:Elixer-1}"
+        }},
+        "flags": {
+            "is_sneaking": true
+        }
+    }
+}

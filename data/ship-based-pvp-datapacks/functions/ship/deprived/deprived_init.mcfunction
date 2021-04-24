@@ -1,6 +1,6 @@
 #イニシャライザ（持たざる者）
 #legs
-execute as @a[scores={ship-num=8}] at @s run replaceitem entity @s armor.legs leather_leggings{display:{Name:'{"text":"恥部隠し","color":"white","bold":true,"italic":false}'},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.7,Operation:2,UUID:[I;-231948789,-1071627565,-1464515596,1853268346],Slot:"legs"}]} 1
+execute as @a[scores={ship-num=8}] at @s run replaceitem entity @s armor.legs leather_leggings{display:{Name:'{"text":"恥部隠し","color":"white","bold":true,"italic":false}'},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.6,Operation:2,UUID:[I;-231948789,-1071627565,-1464515596,1853268346],Slot:"legs"}]} 1
 #mainhand(slot 0)
 execute as @a[scores={ship-num=8}] at @s run replaceitem entity @s hotbar.0 stone_axe{display:{Name:'{"text":"山賊の斧","color":"gray","bold":true,"italic":false}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:9,Operation:0,UUID:[I;-1625924026,1854228830,-1207546323,-1911202311],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:0.5,Operation:2,UUID:[I;1133861459,628903935,-1572517933,-562836960],Slot:"mainhand"}]} 1
 #estus(slot 1)

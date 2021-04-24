@@ -8,6 +8,7 @@
         "ship-based-pvp-datapacks:skill/soothing-sunlight",
         "ship-based-pvp-datapacks:skill/tears-of-denial",
         "ship-based-pvp-datapacks:skill/the-end-of-the-world",
-        "ship-based-pvp-datapacks:skill/warcry"
+        "ship-based-pvp-datapacks:skill/warcry",
+        "#ship-based-pvp-datapacks:call-shopitemprocess"
     ]
 }
