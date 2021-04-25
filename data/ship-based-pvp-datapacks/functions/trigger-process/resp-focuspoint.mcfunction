@@ -1,4 +1,5 @@
 #リスポーン時のFP-reset
+#死亡した場合、通貨を含めてアイテムを全ロストするよう変更
 clear @s
 execute as @s[scores={ship-num=1}] at @s run function ship-based-pvp-datapacks:ship/knight/knight_init
 execute as @s[scores={ship-num=2}] at @s run function ship-based-pvp-datapacks:ship/mercenary/mercenary_init
