@@ -1,7 +1,6 @@
 {
     "condition": "entity_properties",
-    "entity": "killer",
+    "entity": "killer_player",
     "predicate": {
-        "type": "player"
     }
 }

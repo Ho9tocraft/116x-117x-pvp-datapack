@@ -18,7 +18,6 @@ execute if score #Helper point-red < #Helper point-blue run title @a title {"tex
 
 #所持アイテムリセット
 clear @a[team=!]
-execute as @a[team=!] at @s run function ho9tocraft:item-sample/ship-select
 scoreboard players set @a ship-num 0
 scoreboard players set @a skill1-ct 0
 scoreboard players set @a skill2-ct 0
