@@ -13,12 +13,14 @@ execute as @a[team=Red,scores={killcount-Temp=1..,respawn-time=10}] at @s run sc
 
 #2. リスポーンクールタイム・カウントダウン
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator] at @s run scoreboard players remove @s respawn-time 1
-execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator] at @s positioned as @p[predicate=ship-based-pvp-datapacks:killstreaks] run tp @s ~ ~ ~
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator,team=Red] at @s run spectate @s @p[sort=nearest,team=Blue]
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator,team=Blue] at @s run spectate @s @p[sort=nearest,team=Red]
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator] at @s run title @s times 0 100 0
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator] at @s run title @s subtitle ["",{"text":"Respawn Remains: "},{"score":{"name":"@s","objective":"respawn-time"},"color":"green"}]
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=1..},gamemode=spectator] at @s run title @s title {"text":" \u0020YOU DIED \u0020 ","bold":true,"underlined":true,"color":"red"}
 
 #3. リスポーンクールタイム・エンド
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run spectate @s
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run function ship-based-pvp-datapacks:trigger-process/resp-focuspoint
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run function ship-based-pvp-datapacks:trigger-process/respawn-trigger
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s minecraft:health_boost 1000000 4 true

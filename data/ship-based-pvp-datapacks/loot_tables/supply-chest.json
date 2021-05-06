@@ -118,7 +118,8 @@
                     ]
                 }
             ],
-            "rolls": 4
+            "rolls": 4,
+            "bonus_rolls": 5
         }
     ]
 }

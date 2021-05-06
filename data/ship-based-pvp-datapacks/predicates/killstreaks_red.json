@@ -2,5 +2,6 @@
     "condition": "entity_properties",
     "entity": "killer_player",
     "predicate": {
+        "team": "Red"
     }
 }

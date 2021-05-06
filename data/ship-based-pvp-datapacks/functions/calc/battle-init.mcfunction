@@ -1,5 +1,7 @@
 function #ship-based-pvp-datapacks:call-ship-initializer
+experience set @a 0 levels
 gamemode spectator @a[scores={ship-num=..0}]
+team leave @a[scores={ship-num=..0}]
 gamemode adventure @a[scores={ship-num=1..}]
 function ship-based-pvp-datapacks:trigger-process/respawn-trigger
 bossbar add prepare_time {"text": "準備時間"}
@@ -34,3 +36,4 @@ effect give @a saturation 600 9 true
 give @a[gamemode=!spectator] cooked_beef 64
 clear @a[scores={ship-num=2}] cooked_beef 48
 clear @a[scores={ship-num=8}] cooked_beef 48
+kill @e[type=item]
