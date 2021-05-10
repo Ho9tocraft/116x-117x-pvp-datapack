@@ -18,6 +18,9 @@ execute if score #Helper point-red < #Helper point-blue run title @a title {"tex
 
 #所持アイテムリセット
 clear @a[team=!]
+scoreboard players set @a awake_gauge 0
+tag @a[tag=awake] remove awake
+tag @a[tag=awake_lostfp] remove awake_lostfp
 scoreboard players set @a ship-num 0
 scoreboard players set @a skill1-ct 0
 scoreboard players set @a skill2-ct 0

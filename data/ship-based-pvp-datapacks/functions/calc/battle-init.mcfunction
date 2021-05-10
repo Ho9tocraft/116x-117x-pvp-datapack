@@ -1,9 +1,10 @@
-function #ship-based-pvp-datapacks:call-ship-initializer
-experience set @a 0 levels
+execute as @a at @s run function #ship-based-pvp-datapacks:call-ship-initializer
+scoreboard players set @a awake_gauge 0
 gamemode spectator @a[scores={ship-num=..0}]
-team leave @a[scores={ship-num=..0}]
+kill @e[type=item]
 gamemode adventure @a[scores={ship-num=1..}]
 function ship-based-pvp-datapacks:trigger-process/respawn-trigger
+team leave @a[scores={ship-num=..0}]
 bossbar add prepare_time {"text": "準備時間"}
 bossbar set minecraft:prepare_time color blue
 bossbar set minecraft:prepare_time max 30

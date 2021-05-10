@@ -48,9 +48,9 @@ scoreboard objectives add ship-num dummy {"text":"職業の番号","color":"gold
 #HP表示(観戦)
 scoreboard objectives add health-spectate health
 #HP表示(赤チーム)
-scoreboard objectives add health-red health
+scoreboard objectives add health-red dummy
 #HP表示(青チーム)
-scoreboard objectives add health-blue health
+scoreboard objectives add health-blue dummy
 #殺害回数(一時データ/0～1)
 scoreboard objectives add killcount-Temp deathCount
 #FP(他RPGで言うところのMPに相当する要素/0～)
@@ -68,6 +68,8 @@ scoreboard objectives add stamina food
 #盾受け
 scoreboard objectives add shield-guard minecraft.custom:damage_blocked_by_shield
 scoreboard objectives add shield-guard-sum dummy
+#覚醒ゲージ
+scoreboard objectives add awake_gauge dummy
 #攻撃観測
 scoreboard objectives add attack-det minecraft.custom:damage_dealt
 #Teamセレクト結果（一時的）
@@ -120,6 +122,8 @@ scoreboard players set #Helper timer_battle-hf 300
 scoreboard players set #Helper timer_battle-qa 150
 #Token Phase
 scoreboard players set #Helper token-phase 0
+scoreboard players set @a health-blue 0
+scoreboard players set @a health-red 0
 #△Dummy Player[Helper] Initialization
 
 #リストア・イニシャライザ

@@ -2,6 +2,7 @@
     "values": [
         "ship-based-pvp-datapacks:calc/tick-func",
         "#ship-based-pvp-datapacks:call-skillprocess",
+        "#ship-based-pvp-datapacks:call-awakeprocess",
         "ship-based-pvp-datapacks:tick-process/estus-usage",
         "ship-based-pvp-datapacks:tick-process/overed-boost",
         "ship-based-pvp-datapacks:tick-process/auto-regeneration",

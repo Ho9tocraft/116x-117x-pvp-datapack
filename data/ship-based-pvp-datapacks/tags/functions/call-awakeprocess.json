@@ -1,3 +1,9 @@
 {
-    "values": []
+    "values": [
+        "ship-based-pvp-datapacks:skill/ultimate/basic",
+        "ship-based-pvp-datapacks:skill/ultimate/herald",
+        "ship-based-pvp-datapacks:skill/ultimate/sorcerer",
+        "ship-based-pvp-datapacks:skill/ultimate/firelinker",
+        "ship-based-pvp-datapacks:skill/ultimate/harrowed"
+    ]
 }

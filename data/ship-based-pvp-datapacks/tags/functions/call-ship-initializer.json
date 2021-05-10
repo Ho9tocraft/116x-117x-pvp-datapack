@@ -1,5 +1,6 @@
 {
     "values": [
+        "ship-based-pvp-datapacks:ship/awake_skill",
         "ship-based-pvp-datapacks:ship/deprived/deprived_init",
         "ship-based-pvp-datapacks:ship/herald/herald_init",
         "ship-based-pvp-datapacks:ship/knight/knight_init",

@@ -25,6 +25,7 @@ execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=s
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run function ship-based-pvp-datapacks:trigger-process/respawn-trigger
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s minecraft:health_boost 1000000 4 true
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s minecraft:instant_health 20 9 true
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s resistance 10 5 true
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run title @s times 0 100 40
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run title @s title {"text":" \u0020Respawned \u0020 ","bold":true,"underlined":true}
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill1-ct 5
