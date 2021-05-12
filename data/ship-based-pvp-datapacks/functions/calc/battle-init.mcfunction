@@ -36,5 +36,5 @@ effect give @a[gamemode=!spectator] health_boost 1000000 4 true
 effect give @a saturation 600 9 true
 give @a[gamemode=!spectator] cooked_beef 64
 clear @a[scores={ship-num=2}] cooked_beef 48
-clear @a[scores={ship-num=8}] cooked_beef 48
+clear @a[scores={ship-num=8}] cooked_beef 32
 kill @e[type=item]

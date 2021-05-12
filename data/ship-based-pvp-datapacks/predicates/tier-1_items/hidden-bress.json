@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {"mainhand": {
             "item": "dragon_breath",
-            "nbt": "{citTexture:Elixer-1}"
+            "nbt": "{citTexture:Elixer-2}"
         }},
         "flags": {
             "is_sneaking": true

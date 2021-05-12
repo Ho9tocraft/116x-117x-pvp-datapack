@@ -19,10 +19,16 @@ kill @e[type=arrow,nbt={inGround:true,life:100s}]
 #通常矢弾回収不可: トレジャーボックス内の通常矢弾を回収出来ない。専用矢弾しか使えない。
 
 #覚醒ゲージチャージ: 覚醒ゲージのチャージングを実行する。
-execute as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 5 run scoreboard players add @s awake_gauge 1
-execute as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players add @s awake_gauge 1
-execute as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 15 run scoreboard players add @s awake_gauge 1
-execute as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 20 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 0..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 5 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 0..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 0..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 15 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 0..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 20 run scoreboard players add @s awake_gauge 1
+
+#FCS: 索敵レーダー
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Blue,distance=..10] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=1..},team=Blue] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Red,distance=..10] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Blue,distance=..10] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=1..},team=Blue] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Red,distance=..10] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
 
 #common process but tick end
 

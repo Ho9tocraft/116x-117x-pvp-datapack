@@ -13,4 +13,8 @@ execute as @a[scores={ship-num=8,awake_gauge=1..},tag=awake] at @s run effect gi
 execute as @a[scores={ship-num=8,awake_gauge=1..},tag=awake] at @s run effect give @s resistance 4 3 false
 
 execute as @a[scores={ship-num=1..,awake_gauge=1..},tag=awake] at @s run scoreboard players remove @s awake_gauge 1
+#全覚醒共通: CT短縮（半減）
+execute as @a[scores={ship-num=1..,awake_gauge=1..,skill3-ct=1..},tag=awake] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players remove @s skill3-ct 1
+execute as @a[scores={ship-num=1..,awake_gauge=1..,skill2-ct=1..},tag=awake] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players remove @s skill2-ct 1
+execute as @a[scores={ship-num=1..,awake_gauge=1..,skill1-ct=1..},tag=awake] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players remove @s skill1-ct 1
 function ship-based-pvp-datapacks:trigger-process/ultimate_after
