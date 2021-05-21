@@ -8,6 +8,7 @@ execute as @a[scores={ship-num=6,FocusPoint=..249},predicate=ship-based-pvp-data
 execute as @a[scores={ship-num=7,FocusPoint=..249}] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=7,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=8,FocusPoint=..99},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=9,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=11,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 
 

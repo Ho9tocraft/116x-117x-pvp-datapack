@@ -23,6 +23,8 @@ scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay sidebar.team.red health-red
 scoreboard objectives setdisplay sidebar.team.blue health-blue
 
+function ship-based-pvp-datapacks:calc/enderchest-empty
+
 scoreboard players set @a shield-guard 0
 scoreboard players set @a shield-guard-sum 0
 scoreboard players set @a killcount-Temp 0

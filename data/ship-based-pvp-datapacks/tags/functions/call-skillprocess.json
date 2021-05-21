@@ -11,6 +11,8 @@
         "ship-based-pvp-datapacks:skill/the-end-of-the-world",
         "ship-based-pvp-datapacks:skill/warcry",
         "ship-based-pvp-datapacks:skill/sunlight-spear",
+        "ship-based-pvp-datapacks:skill/crossbow-recharger",
+        "ship-based-pvp-datapacks:skill/fang",
         "#ship-based-pvp-datapacks:call-shopitemprocess"
     ]
 }

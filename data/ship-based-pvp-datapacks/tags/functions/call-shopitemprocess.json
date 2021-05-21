@@ -2,6 +2,8 @@
     "values": [
         "ship-based-pvp-datapacks:skill/tier-1_shop-item/godess-bress",
         "ship-based-pvp-datapacks:skill/tier-1_shop-item/hidden-bress",
-        "ship-based-pvp-datapacks:skill/tier-1_shop-item/siegbraw"
+        "ship-based-pvp-datapacks:skill/tier-1_shop-item/siegbraw",
+        "ship-based-pvp-datapacks:skill/tier-2_shop-item/satelitecannon",
+        "ship-based-pvp-datapacks:skill/tier-2_shop-item/dainsleif"
     ]
 }

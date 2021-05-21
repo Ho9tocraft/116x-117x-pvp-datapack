@@ -1,0 +1,11 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "item": "pink_dye",
+            "nbt": "{citTexture:Fang}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}

@@ -36,6 +36,8 @@ execute if score #Helper timer_battle matches 60 run title @a title {"text":"\u6
 execute if score #Helper timer_battle matches 60 run playsound entity.wither.spawn master @a[gamemode=!spectator] ~ ~ ~ 100 1.0 0.5
 #芋り対策の為発光エフェクト付与
 execute if score #Helper timer_battle matches 60 run effect give @a[team=!] glowing 60 9 true
+#金トークン32個を一律配布
+execute if score #Helper timer_battle matches 60 as @a[team=!] at @s run give @s gold_ingot{display:{Name:'{"text":"Gold Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 32
 
 
 #試合終了

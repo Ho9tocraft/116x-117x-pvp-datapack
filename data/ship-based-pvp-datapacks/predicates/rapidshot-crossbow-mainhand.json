@@ -1,0 +1,10 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "item": "crossbow",
+            "nbt": "{Charged:0b,autoCharge:2b,citTexture:CataliKnuckle}"
+        }}
+    }
+}

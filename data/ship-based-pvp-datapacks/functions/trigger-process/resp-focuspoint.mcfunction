@@ -10,6 +10,6 @@ execute as @s[scores={ship-num=5}] at @s run function ship-based-pvp-datapacks:s
 execute as @s[scores={ship-num=6}] at @s run function ship-based-pvp-datapacks:ship/soulbounded-firelinker/sb-firelinker_init
 execute as @s[scores={ship-num=7}] at @s run function ship-based-pvp-datapacks:ship/the-harrowed-hunter/the-harrowed-hunter_init
 execute as @s[scores={ship-num=8}] at @s run function ship-based-pvp-datapacks:ship/deprived/deprived_init
-# execute as @s[scores={ship-num=9}] at @s run function ship-based-pvp-datapacks:ship/deprived/deprived_init
+execute as @s[scores={ship-num=9}] at @s run function ship-based-pvp-datapacks:ship/raider/raider_init
 # execute as @s[scores={ship-num=10}] at @s run function ship-based-pvp-datapacks:ship/deprived/deprived_init
 execute as @s[scores={ship-num=11}] at @s run function ship-based-pvp-datapacks:ship/pri-knight/pri-knight_init
