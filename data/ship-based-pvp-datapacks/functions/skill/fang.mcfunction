@@ -41,3 +41,4 @@ execute as @e[type=evoker_fangs,tag=Fang_Blue,nbt={Warmup:0}] at @s as @e[distan
 
 execute as @a[scores={ship-num=9,skill3-ct=0,FocusPoint=10..},predicate=ship-based-pvp-datapacks:fang-appears] at @s run scoreboard players remove @s FocusPoint 10
 execute as @a[scores={ship-num=9,skill3-ct=0},predicate=ship-based-pvp-datapacks:fang-appears] at @s run scoreboard players set @s skill3-ct 10
+execute as @a[scores={ship-num=9,skill3-ct=..5,FocusPoint=..9},predicate=ship-based-pvp-datapacks:fang-appears] at @s run scoreboard players set @s skill3-ct 5

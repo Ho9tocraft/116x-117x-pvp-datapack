@@ -5,7 +5,7 @@
         "flags": {"is_sneaking": true},
         "equipment": {
             "mainhand": {
-                "item": "minecraft:red_dye",
+                "items": ["minecraft:red_dye"],
                 "nbt": "{citTexture:Knight}"
             }
         }

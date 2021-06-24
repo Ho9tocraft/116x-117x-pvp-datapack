@@ -11,3 +11,4 @@ execute as @a[scores={ship-num=1,skill3-ct=0,FocusPoint=65..},predicate=ship-bas
 execute as @a[scores={ship-num=1,skill3-ct=0,FocusPoint=65..},predicate=ship-based-pvp-datapacks:sacred-oath] at @s run scoreboard players remove @s FocusPoint 65
 #4: クールタイム制御
 execute as @a[scores={ship-num=1,skill3-ct=0},predicate=ship-based-pvp-datapacks:sacred-oath] at @s run scoreboard players set @s skill3-ct 40
+execute as @a[scores={ship-num=1,skill3-ct=..5,FocusPoint=..64},predicate=ship-based-pvp-datapacks:sacred-oath] at @s run scoreboard players set @s skill3-ct 5

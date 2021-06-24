@@ -26,6 +26,11 @@ execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..159
 execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 20 run scoreboard players add @s awake_gauge 1
 
 #FCS: 索敵レーダー
+execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Blue,distance=15..30] run playsound block.note_block.harp master @s ~ ~ ~ 100 1.0 1.0
+execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Blue] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Red,distance=15..30] run playsound block.note_block.harp master @s ~ ~ ~ 100 1.0 1.0
+execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Blue,distance=15..30] run playsound block.note_block.harp master @s ~ ~ ~ 100 1.0 1.0
+execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Blue] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Red,distance=15..30] run playsound block.note_block.harp master @s ~ ~ ~ 100 1.0 1.0
+
 execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Blue,distance=..15] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
 execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Blue] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Red,distance=..15] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
 execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Blue,distance=..15] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0

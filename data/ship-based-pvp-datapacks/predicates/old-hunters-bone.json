@@ -4,7 +4,7 @@
     "predicate": {
         "flags": {"is_sneaking": true},
         "equipment": {"mainhand": {
-            "item": "light_blue_dye",
+            "items": ["light_blue_dye"],
             "nbt": "{citTexture:Hunter}"
         }}
     }

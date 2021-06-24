@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
         "equipment": {"mainhand": {
-            "item": "dragon_breath",
+            "items": ["dragon_breath"],
             "nbt": "{citTexture:Elixer-1}"
         }},
         "flags": {

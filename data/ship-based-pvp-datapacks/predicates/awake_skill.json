@@ -4,7 +4,7 @@
     "predicate": {
         "flags": {"is_sneaking": true},
         "equipment": {"mainhand": {
-            "item": "glowstone_dust",
+            "items": ["glowstone_dust"],
             "nbt": "{citTexture:awake_item}"
         }}
     }

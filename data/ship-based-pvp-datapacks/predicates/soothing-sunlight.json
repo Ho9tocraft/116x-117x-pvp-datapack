@@ -5,7 +5,7 @@
         "flags": {"is_sneaking": true},
         "equipment": {
             "mainhand": {
-                "item": "minecraft:orange_dye",
+                "items": ["minecraft:orange_dye"],
                 "nbt": "{citTexture:Sunlight}"
             }
         }

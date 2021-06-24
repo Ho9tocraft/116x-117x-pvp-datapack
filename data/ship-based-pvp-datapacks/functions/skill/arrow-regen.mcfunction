@@ -10,6 +10,6 @@ execute as @a[scores={ship-num=7,skill3-ct=0},predicate=ship-based-pvp-datapacks
 #3.矢の補充
 execute as @a[scores={ship-num=7,skill3-ct=0},predicate=ship-based-pvp-datapacks:arrow-regeneration] at @s run give @s arrow 16
 #4.FP回復
-execute as @a[scores={ship-num=7,skill3-ct=0,fFocusPoint=..249},predicate=ship-based-pvp-datapacks:arrow-regeneration] at @s run scoreboard players add @s FocusPoint 10
+execute as @a[scores={ship-num=7,skill3-ct=0,FocusPoint=..249},predicate=ship-based-pvp-datapacks:arrow-regeneration] at @s run scoreboard players add @s FocusPoint 10
 execute as @a[scores={ship-num=7,skill3-ct=0,FocusPoint=251..},predicate=ship-based-pvp-datapacks:arrow-regeneration] at @s run scoreboard players set @s FocusPoint 250
 execute as @a[scores={ship-num=7,skill3-ct=0},predicate=ship-based-pvp-datapacks:arrow-regeneration] at @s run scoreboard players set @s skill3-ct 40

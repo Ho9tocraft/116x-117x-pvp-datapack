@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
         "equipment": {"mainhand": {
-            "item": "pink_dye",
+            "items": ["pink_dye"],
             "nbt": "{citTexture:Fang}"
         }},
         "flags": {"is_sneaking": true}

@@ -1,28 +1,28 @@
 #エンダーチェスト内部リセット
-execute as @a at @s run replaceitem entity @s enderchest.0 air
-execute as @a at @s run replaceitem entity @s enderchest.1 air
-execute as @a at @s run replaceitem entity @s enderchest.2 air
-execute as @a at @s run replaceitem entity @s enderchest.3 air
-execute as @a at @s run replaceitem entity @s enderchest.4 air
-execute as @a at @s run replaceitem entity @s enderchest.5 air
-execute as @a at @s run replaceitem entity @s enderchest.6 air
-execute as @a at @s run replaceitem entity @s enderchest.7 air
-execute as @a at @s run replaceitem entity @s enderchest.8 air
-execute as @a at @s run replaceitem entity @s enderchest.9 air
-execute as @a at @s run replaceitem entity @s enderchest.10 air
-execute as @a at @s run replaceitem entity @s enderchest.11 air
-execute as @a at @s run replaceitem entity @s enderchest.12 air
-execute as @a at @s run replaceitem entity @s enderchest.13 air
-execute as @a at @s run replaceitem entity @s enderchest.14 air
-execute as @a at @s run replaceitem entity @s enderchest.15 air
-execute as @a at @s run replaceitem entity @s enderchest.16 air
-execute as @a at @s run replaceitem entity @s enderchest.17 air
-execute as @a at @s run replaceitem entity @s enderchest.18 air
-execute as @a at @s run replaceitem entity @s enderchest.19 air
-execute as @a at @s run replaceitem entity @s enderchest.20 air
-execute as @a at @s run replaceitem entity @s enderchest.21 air
-execute as @a at @s run replaceitem entity @s enderchest.22 air
-execute as @a at @s run replaceitem entity @s enderchest.23 air
-execute as @a at @s run replaceitem entity @s enderchest.24 air
-execute as @a at @s run replaceitem entity @s enderchest.25 air
-execute as @a at @s run replaceitem entity @s enderchest.26 air
+execute as @a at @s run item replace entity @s enderchest.0 with air
+execute as @a at @s run item replace entity @s enderchest.1 with air
+execute as @a at @s run item replace entity @s enderchest.2 with air
+execute as @a at @s run item replace entity @s enderchest.3 with air
+execute as @a at @s run item replace entity @s enderchest.4 with air
+execute as @a at @s run item replace entity @s enderchest.5 with air
+execute as @a at @s run item replace entity @s enderchest.6 with air
+execute as @a at @s run item replace entity @s enderchest.7 with air
+execute as @a at @s run item replace entity @s enderchest.8 with air
+execute as @a at @s run item replace entity @s enderchest.9 with air
+execute as @a at @s run item replace entity @s enderchest.10 with air
+execute as @a at @s run item replace entity @s enderchest.11 with air
+execute as @a at @s run item replace entity @s enderchest.12 with air
+execute as @a at @s run item replace entity @s enderchest.13 with air
+execute as @a at @s run item replace entity @s enderchest.14 with air
+execute as @a at @s run item replace entity @s enderchest.15 with air
+execute as @a at @s run item replace entity @s enderchest.16 with air
+execute as @a at @s run item replace entity @s enderchest.17 with air
+execute as @a at @s run item replace entity @s enderchest.18 with air
+execute as @a at @s run item replace entity @s enderchest.19 with air
+execute as @a at @s run item replace entity @s enderchest.20 with air
+execute as @a at @s run item replace entity @s enderchest.21 with air
+execute as @a at @s run item replace entity @s enderchest.22 with air
+execute as @a at @s run item replace entity @s enderchest.23 with air
+execute as @a at @s run item replace entity @s enderchest.24 with air
+execute as @a at @s run item replace entity @s enderchest.25 with air
+execute as @a at @s run item replace entity @s enderchest.26 with air

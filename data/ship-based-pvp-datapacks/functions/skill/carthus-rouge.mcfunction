@@ -6,3 +6,4 @@ execute as @a[scores={ship-num=2,skill3-ct=0,FocusPoint=35..},predicate=ship-bas
 execute as @a[scores={ship-num=2,skill3-ct=0,FocusPoint=35..},predicate=ship-based-pvp-datapacks:carthus-rouge] at @s run scoreboard players remove @s FocusPoint 35
 #CT: 200 seconds
 execute as @a[scores={ship-num=2,skill3-ct=0},predicate=ship-based-pvp-datapacks:carthus-rouge] at @s run scoreboard players set @s skill3-ct 200
+execute as @a[scores={ship-num=2,skill3-ct=..5,FocusPoint=..34},predicate=ship-based-pvp-datapacks:carthus-rouge] at @s run scoreboard players set @s skill3-ct 5

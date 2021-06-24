@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
         "equipment": {"mainhand": {
-            "item": "golden_sword",
+            "items": ["golden_sword"],
             "nbt": "{citTexture:NamelessKing}"
         }},
         "flags": {"is_sneaking": true}

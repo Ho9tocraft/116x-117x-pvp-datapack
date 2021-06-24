@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
         "equipment": {"offhand": {
-            "item": "minecraft:crossbow",
+            "items": ["minecraft:crossbow"],
             "nbt": "{autoCharge:1b,Charged:0b}"
         }}
     }

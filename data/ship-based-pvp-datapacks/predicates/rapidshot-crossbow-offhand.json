@@ -2,7 +2,7 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {"equipment": {"offhand": {
-        "item": "crossbow",
+        "items": ["crossbow"],
         "nbt": "{citTexture:CataliKnuckle,autoCharge:2b,Charged:0b}"
     }}}
 }
