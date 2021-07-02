@@ -96,4 +96,4 @@ execute as @a[scores={ship-num=11,skill3-ct=0,FocusPoint=36..},predicate=ship-ba
 #CT等の処理
 execute as @a[scores={ship-num=11,skill3-ct=0,FocusPoint=36..},predicate=ship-based-pvp-datapacks:sunlight_spear] at @s run scoreboard players remove @s FocusPoint 36
 execute as @a[scores={ship-num=11,skill3-ct=0},predicate=ship-based-pvp-datapacks:sunlight_spear] at @s run scoreboard players set @s skill3-ct 4
-execute as @a[scores={ship-num=11,skill3-ct=..4,FocusPoint=..35},predicate=ship-based-pvp-datapacks:sunlight_spear] at @s run scoreboard players set @s skill3-ct 4
+execute as @a[scores={ship-num=11,skill3-ct=..4,FocusPoint=..35}] at @s run scoreboard players set @s skill3-ct 4

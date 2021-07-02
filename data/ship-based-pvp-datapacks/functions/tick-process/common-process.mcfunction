@@ -9,6 +9,7 @@ execute as @a[scores={ship-num=7,FocusPoint=..249}] at @s run scoreboard players
 execute as @a[scores={ship-num=7,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=8,FocusPoint=..99},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=9,FocusPoint=..249},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=10,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=11,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 
 
@@ -18,4 +19,11 @@ execute as @a[scores={ship-num=6,FocusPoint=5..99}] at @s run effect give @s wea
 execute as @a[scores={ship-num=6,FocusPoint=..4}] at @s run effect give @s weakness 1 255 true
 execute as @a[scores={ship-num=6,FocusPoint=..4}] at @s run effect give @s mining_fatigue 1 255 true
 execute as @a[scores={attack-det=1..}] at @s run scoreboard players set @s attack-det 0
+
+
+#水中突入時ダメージ付加: 水中に潜ると足をつけているだけでもダメージ。
+execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ water run effect give @s instant_damage 40 0 false
+
+#溶岩突入時ダメージ付加: 溶岩ダイブすると足をつけているだけでも大ダメージ。
+execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ water run effect give @s instant_damage 40 1 false
 

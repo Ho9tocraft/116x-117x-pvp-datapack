@@ -19,7 +19,7 @@ execute as @a[scores={ship-num=6,skill2-ct=0,FocusPoint=80..},predicate=ship-bas
 #3: FP消費（原作と同じ80）&CT 15sec
 execute as @a[scores={ship-num=6,skill2-ct=0,FocusPoint=80..},predicate=ship-based-pvp-datapacks:soothing-sunlight] at @s run scoreboard players remove @s FocusPoint 80
 execute as @a[scores={ship-num=6,skill2-ct=0},predicate=ship-based-pvp-datapacks:soothing-sunlight] at @s run scoreboard players set @s skill2-ct 15
-execute as @a[scores={ship-num=6,skill2-ct=..5,FocusPoint=..79},predicate=ship-based-pvp-datapacks:soothing-sunlight] at @s run scoreboard players set @s skill2-ct 5
+execute as @a[scores={ship-num=6,skill2-ct=..5,FocusPoint=..79}] at @s run scoreboard players set @s skill2-ct 5
 
 
 #ship id:11(princess knight)
@@ -35,3 +35,4 @@ execute as @a[scores={ship-num=11,skill2-ct=0,FocusPoint=64..},predicate=ship-ba
 #3: FP消費（原作と同じ64）&CT 15sec
 execute as @a[scores={ship-num=11,skill2-ct=0,FocusPoint=64..},predicate=ship-based-pvp-datapacks:soothing-sunlight] at @s run scoreboard players remove @s FocusPoint 64
 execute as @a[scores={ship-num=11,skill2-ct=0},predicate=ship-based-pvp-datapacks:soothing-sunlight] at @s run scoreboard players set @s skill2-ct 20
+execute as @a[scores={ship-num=11,skill2-ct=..5,FocusPoint=..63}] at @s run scoreboard players set @s skill2-ct 5

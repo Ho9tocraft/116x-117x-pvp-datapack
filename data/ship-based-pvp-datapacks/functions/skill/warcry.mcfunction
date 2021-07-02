@@ -26,5 +26,5 @@ execute as @a[scores={ship-num=3,skill3-ct=0,FocusPoint=20..},predicate=ship-bas
 execute as @a[scores={ship-num=8,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players remove @s FocusPoint 20
 execute as @a[scores={ship-num=3,skill3-ct=0},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 60
 execute as @a[scores={ship-num=8,skill3-ct=0},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 60
-execute as @a[scores={ship-num=3,skill3-ct=..5,FocusPoint=..19},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 5
-execute as @a[scores={ship-num=8,skill3-ct=..5,FocusPoint=..19},predicate=ship-based-pvp-datapacks:warcry] at @s run scoreboard players set @s skill3-ct 5
+execute as @a[scores={ship-num=3,skill3-ct=..5,FocusPoint=..19}] at @s run scoreboard players set @s skill3-ct 5
+execute as @a[scores={ship-num=8,skill3-ct=..5,FocusPoint=..19}] at @s run scoreboard players set @s skill3-ct 5

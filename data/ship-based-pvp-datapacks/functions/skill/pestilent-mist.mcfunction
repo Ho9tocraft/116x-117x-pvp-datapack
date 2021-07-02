@@ -5,6 +5,6 @@ execute as @a[scores={ship-num=5,skill3-ct=0,FocusPoint=25..},predicate=ship-bas
 execute as @a[scores={ship-num=5,skill3-ct=0,FocusPoint=25..},predicate=ship-based-pvp-datapacks:pestilent-mist,team=Blue] at @s run data modify entity @e[type=area_effect_cloud,tag=mist-blue,limit=1,sort=nearest] Owner set from entity @s UUID
 execute as @a[scores={ship-num=5,skill3-ct=0,FocusPoint=25..},predicate=ship-based-pvp-datapacks:pestilent-mist] at @s run scoreboard players remove @s FocusPoint 25
 execute as @a[scores={ship-num=5,skill3-ct=0},predicate=ship-based-pvp-datapacks:pestilent-mist] at @s run scoreboard players set @s skill3-ct 30
-execute as @a[scores={ship-num=5,skill3-ct=..5,FocusPoint=..24},predicate=ship-based-pvp-datapacks:pestilent-mist] at @s run scoreboard players set @s skill3-ct 5
+execute as @a[scores={ship-num=5,skill3-ct=..5,FocusPoint=..24}] at @s run scoreboard players set @s skill3-ct 5
 
 

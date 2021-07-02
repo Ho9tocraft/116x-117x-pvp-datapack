@@ -8,4 +8,4 @@ execute as @a[scores={ship-num=7,skill2-ct=0,FocusPoint=90..},predicate=ship-bas
 execute as @a[scores={ship-num=7,skill2-ct=0,FocusPoint=90..},predicate=ship-based-pvp-datapacks:old-hunters-bone] at @s run scoreboard players remove @s FocusPoint 90
 #CT: 30 seconds
 execute as @a[scores={ship-num=7,skill2-ct=0},predicate=ship-based-pvp-datapacks:old-hunters-bone] at @s run scoreboard players set @s skill2-ct 60
-execute as @a[scores={ship-num=7,skill2-ct=..5,FocusPoint=..89},predicate=ship-based-pvp-datapacks:old-hunters-bone] at @s run scoreboard players set @s skill2-ct 5
+execute as @a[scores={ship-num=7,skill2-ct=..5,FocusPoint=..89}] at @s run scoreboard players set @s skill2-ct 5

@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["netherite_scrap"],
+            "nbt": "{citTexture:kichigai}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}

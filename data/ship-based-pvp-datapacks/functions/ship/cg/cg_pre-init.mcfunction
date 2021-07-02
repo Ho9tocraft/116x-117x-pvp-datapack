@@ -1,0 +1,6 @@
+#counter guardian pre init（抑止の守護者 職業説明文等配布）
+clear @s written_book{shipbased:true}
+execute as @s at @s run item replace entity @s hotbar.8 with written_book{pages:['["",{"text":"HP\\uff1a","bold":true},{"text":"100\\n","color":"reset"},{"text":"FP\\uff1a","bold":true},{"text":"300\\n","color":"reset"},{"text":"\\u30e1\\u30a4\\u30f3\\u6b66\\u5668\\uff1a","bold":true},{"text":"\\u6295\\u5f71\\u6b66\\u5668\\n","color":"reset"},{"text":"\\u30aa\\u30d5\\u30cf\\u30f3\\u30c9\\uff1a","bold":true},{"text":"\\u306a\\u3057\\n","color":"reset"},{"text":"Counter Guardian","obfuscated":true},{"text":"\\u3068\\u5951\\u7d04\\u3057\\u3001\\u52a0\\u5bb3\\u8005\\u30fb\\u88ab\\u5bb3\\u8005\\u95a2\\u4fc2\\u306a\\u304f\\u6bba\\u3059\\u8077\\u696d\\u3060\\n\\u30e6\\u30cb\\u30fc\\u30af\\u30b9\\u30ad\\u30eb\\u306f\\u300c\\u6295\\u5f71\\u300d\\n\\u6b66\\u5668\\u306e\\u5207\\u308a\\u66ff\\u3048\\u3092\\u5b9f\\u884c\\u3059\\u308b","color":"reset"}]'],title:"職業説明文(抑止の守護者)",author:EMIYA,shipbased:true}
+execute as @s at @s run scoreboard players set @s ship-num 12
+playsound entity.player.levelup player @s ~ ~ ~ 100 1.0 0.5
+tellraw @s ["",{"text":"\u8077\u696d\u3092\u300c"},{"text":"\u6291\u6b62\u306e\u5b88\u8b77\u8005","color":"green"},{"text":"\u300d\u306b\u8a2d\u5b9a\u3057\u307e\u3057\u305f\uff01"}]

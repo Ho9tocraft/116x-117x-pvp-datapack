@@ -4,3 +4,4 @@ execute as @a[scores={ship-num=4,skill3-ct=0,FocusPoint=100..},predicate=ship-ba
 execute as @a[scores={ship-num=4,skill3-ct=0,FocusPoint=100..},predicate=ship-based-pvp-datapacks:tears-of-denial] at @s run scoreboard players remove @s FocusPoint 100
 #CT: 120 seconds
 execute as @a[scores={ship-num=4,skill3-ct=0},predicate=ship-based-pvp-datapacks:tears-of-denial] at @s run scoreboard players set @s skill3-ct 120
+execute as @a[scores={ship-num=4,skill3-ct=..5,FocusPoint=..99}] at @s run scoreboard players set @s skill3-ct 5

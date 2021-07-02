@@ -46,5 +46,5 @@ effect clear @a luck
 effect give @a saturation 1 9 false
 effect give @a instant_health 1 9 false
 gamemode adventure @a
-spawnpoint @a 200 20 254
-tp @a 200 20 254
+spawnpoint @a -186 12 -56
+tp @a -186 12 -56

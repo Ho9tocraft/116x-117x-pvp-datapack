@@ -197,4 +197,4 @@ execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-ba
 #6. FP消費（125）&CT
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players remove @s FocusPoint 125
 execute as @a[scores={ship-num=6,skill3-ct=0},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players set @s skill3-ct 45
-execute as @a[scores={ship-num=6,skill3-ct=..5,FocusPoint=..124},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players set @s skill3-ct 5
+execute as @a[scores={ship-num=6,skill3-ct=..5,FocusPoint=..124}] at @s run scoreboard players set @s skill3-ct 5

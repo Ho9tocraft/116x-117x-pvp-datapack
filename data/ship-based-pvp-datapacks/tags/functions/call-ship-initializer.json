@@ -10,6 +10,7 @@
         "ship-based-pvp-datapacks:ship/sorcerer/sorcerer_init",
         "ship-based-pvp-datapacks:ship/the-harrowed-hunter/the-harrowed-hunter_init",
         "ship-based-pvp-datapacks:ship/raider/raider_init",
+        "ship-based-pvp-datapacks:ship/sword-of-darkmoon/sword-of-darkmoon_init",
         "ship-based-pvp-datapacks:ship/pri-knight/pri-knight_init"
     ]
 }

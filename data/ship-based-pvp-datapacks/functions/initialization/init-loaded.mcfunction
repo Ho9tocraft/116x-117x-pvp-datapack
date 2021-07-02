@@ -30,8 +30,10 @@ scoreboard objectives add CombatMode dummy
 scoreboard objectives add stage-sel-result dummy
 #ステージセレクトランダマイザ
 scoreboard objectives add stage-sel-rand dummy
-#Teamセレクトランダマイザ
+#Teamセレクトランダマイザ・全メンバー
 scoreboard objectives add team-sel-rand dummy
+#TeamSel Randomizer 半メンバー×2
+scoreboard objectives add team-sel-rd-dob dummy
 #Tokenスポーン時間ループ(鉄)
 scoreboard objectives add token-sp-iron dummy
 #Tokenスポーン時間ループ(金)
@@ -70,6 +72,11 @@ scoreboard objectives add shield-guard minecraft.custom:damage_blocked_by_shield
 scoreboard objectives add shield-guard-sum dummy
 #覚醒ゲージ
 scoreboard objectives add awake_gauge dummy
+#[狂王の磔]狂王の気紛れ用コード
+scoreboard objectives add kichigaiking dummy
+scoreboard objectives add KK_RESULT dummy
+#[抑止の守護者]トレースコード
+scoreboard objectives add TraceOn dummy
 #攻撃観測
 scoreboard objectives add attack-det minecraft.custom:damage_dealt
 #Teamセレクト結果（一時的）
@@ -82,6 +89,7 @@ scoreboard objectives setdisplay sidebar ship-num
 #▽Team Detector
 team add Red {"text": "赤チーム"}
 team add Blue {"text": "青チーム"}
+team add Selection {"text": "選択中"}
 team modify Red color red
 team modify Red collisionRule pushOtherTeams
 team modify Red nametagVisibility hideForOtherTeams
@@ -94,6 +102,7 @@ team modify Blue deathMessageVisibility hideForOtherTeams
 team modify Blue friendlyFire false
 team modify Blue nametagVisibility hideForOtherTeams
 team modify Blue seeFriendlyInvisibles true
+team modify Selection prefix {"text": "[チーム選択中]","color": "gold"}
 #△Team Detector
 
 #▽Dummy Player[Helper] Initialization
