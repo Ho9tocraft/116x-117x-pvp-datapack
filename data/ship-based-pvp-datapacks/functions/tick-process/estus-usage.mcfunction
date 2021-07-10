@@ -103,7 +103,7 @@ execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=8..10},nb
 #エストの灰瓶 ship-num:12～向け
 #FPを240回復する。ただし、上限を突破する場合、それで統合する
 execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players add @s FocusPoint 240
-execute as @a[scores={ship-num=12,skill2-ct=0,FocusPoint=101..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 100
+execute as @a[scores={ship-num=12,skill2-ct=0,FocusPoint=301..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 300
 #灰エスト回復エフェクト
 execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run particle dust 0.698 0.796 0.894 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
 #エストの灰瓶を1個減らす

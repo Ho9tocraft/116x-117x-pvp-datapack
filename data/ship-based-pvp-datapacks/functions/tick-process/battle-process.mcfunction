@@ -5,8 +5,13 @@ execute if score #Helper CombatMode matches 0 run scoreboard players set #Helper
 execute if score #Helper timer_prebattle matches 1.. run scoreboard players remove #Helper timer_prebattle 1
 execute store result bossbar minecraft:prepare_time value run scoreboard players get #Helper timer_prebattle
 #試合残り時間、カウントダウン開始
+execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run title @a times 10 100 40
+execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run title @a title {"text":"BEGIN MATCH","bold":true,"underlined":true,"color":"gold"}
+execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run playsound entity.wither.spawn master @a ~ ~ ~ 100 1.0 0.5
 execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run bossbar remove minecraft:prepare_time
 execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run bossbar set minecraft:battle_time players @a
+execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run effect clear @a saturation
+execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run effect clear @a resistance
 execute if score #Helper CombatMode matches 1 if score #Helper timer_prebattle matches 0 run scoreboard players set #Helper CombatMode 2
 execute if score #Helper CombatMode matches 2 if score #Helper timer_battle matches 0.. run scoreboard players remove #Helper timer_battle 1
 execute store result bossbar minecraft:battle_time value run scoreboard players get #Helper timer_battle
@@ -44,9 +49,9 @@ execute if score #Helper timer_battle matches 60 as @a[team=!] at @s run give @s
 #コンバットモード切り替え
 execute if score #Helper timer_battle matches 0 run scoreboard players set #Helper CombatMode 3
 #タイムアップ通知
-execute if score #Helper timer_battle matches 0 run effect give @a resistance 12 4 true
+execute if score #Helper timer_battle matches 0 run effect give @a resistance 1000000 4 true
 execute if score #Helper timer_battle matches 0 run effect give @a regeneration 12 9 true
-execute if score #Helper timer_battle matches 0 run effect give @a saturation 240 9 true
+execute if score #Helper timer_battle matches 0 run effect give @a saturation 1000000 9 true
 execute if score #Helper timer_battle matches 0 run title @a times 20 160 20
 execute if score #Helper timer_battle matches 0 run title @a title {"text":"Time Up! The Winner is..."}
 #リザルト表示

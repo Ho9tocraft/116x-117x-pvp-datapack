@@ -36,6 +36,9 @@ execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},tea
 execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Blue,distance=..15] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
 execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Blue] at @s if score #Helper tick-sec_conv matches 20 if entity @a[scores={ship-num=1..},team=Red,distance=..15] run playsound block.note_block.harp master @s ~ ~ ~ 100 2.0 1.0
 
+#guardbreak: ガードブレイク処理（暫定）
+function ship-based-pvp-datapacks:tick-process/guardbreak
+
 #common process but tick end
 
 #Seconds Process

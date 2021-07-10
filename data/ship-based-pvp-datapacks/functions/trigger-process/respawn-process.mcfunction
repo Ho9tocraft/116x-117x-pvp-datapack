@@ -1,6 +1,15 @@
 #リスポーンクールタイムの処理です。
 #1. リスポーンセット
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=-1},gamemode=adventure] at @s run scoreboard players set @s respawn-time 10
+# 1-b. 犠牲者が出た時にアイテム配給
+# 1-b-i. 青配給
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s if entity @s[team=Red] run give @a[team=Blue] iron_ingot{display:{Name:'{"text":"Iron Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 5
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s if entity @s[team=Red] run give @a[team=Blue] gold_ingot{display:{Name:'{"text":"Gold Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 5
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s if entity @s[team=Red] run give @a[team=Blue] diamond{display:{Name:'{"text":"Diamond Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 1
+# 1-b-ii. 赤配給
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s if entity @s[team=Blue] run give @a[team=Red] iron_ingot{display:{Name:'{"text":"Iron Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 5
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s if entity @s[team=Blue] run give @a[team=Red] gold_ingot{display:{Name:'{"text":"Gold Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 5
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s if entity @s[team=Blue] run give @a[team=Red] diamond{display:{Name:'{"text":"Diamond Token","color":"blue","bold":true,"italic":false}'},citTexture:Token} 1
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=10},gamemode=adventure] at @s run gamemode spectator @s
 
 #スコア計測

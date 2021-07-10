@@ -133,6 +133,7 @@ scoreboard players set #Helper timer_battle-qa 150
 scoreboard players set #Helper token-phase 0
 scoreboard players set @a health-blue 0
 scoreboard players set @a health-red 0
+scoreboard players set @a TraceOn 0
 #△Dummy Player[Helper] Initialization
 
 #リストア・イニシャライザ

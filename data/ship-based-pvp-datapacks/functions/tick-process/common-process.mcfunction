@@ -22,8 +22,8 @@ execute as @a[scores={attack-det=1..}] at @s run scoreboard players set @s attac
 
 
 #水中突入時ダメージ付加: 水中に潜ると足をつけているだけでもダメージ。
-execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ water run effect give @s instant_damage 40 0 false
+execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ water run effect give @s instant_damage 4 0 false
 
 #溶岩突入時ダメージ付加: 溶岩ダイブすると足をつけているだけでも大ダメージ。
-execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ water run effect give @s instant_damage 40 1 false
+execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ lava run effect give @s instant_damage 4 0 false
 

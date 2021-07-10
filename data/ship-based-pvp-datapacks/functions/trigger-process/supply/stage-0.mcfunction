@@ -1,14 +1,14 @@
 #ステージ0（FEW WORLD）用のサプライチェスト位置データになります。
 #01
-data modify block 1178 75 246 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 370 119 -82 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #02
-data modify block 1215 64 195 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 394 97 -89 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #03
-data modify block 1217 64 197 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 388 97 -88 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #04
-data modify block 1221 64 197 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 368 96 -80 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #05
-data modify block 1223 64 195 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 368 104 -80 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #06
 data modify block 1191 92 215 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #07

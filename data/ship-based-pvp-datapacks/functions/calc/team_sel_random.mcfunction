@@ -5,5 +5,5 @@ execute store result score #Helper team-sel-rand run execute if entity @a[team=S
 execute store result storage team-randomizer member_half int 0.5 run execute if entity @a[team=Selection]
 execute store result score #Helper team-sel-rd-res run data get storage team-randomizer member_half 1.0
 execute store result score #Helper team-sel-rd-dob run data get storage team-randomizer member_half 2.0
-schedule function ship-based-pvp-datapacks:calc/team_selection/sel_once 5t
+schedule function ship-based-pvp-datapacks:calc/team_selection/sel_once 10t
 

@@ -43,7 +43,6 @@ effect clear @a wither
 effect clear @a blindness
 effect clear @a glowing
 effect clear @a luck
-effect give @a saturation 1 9 false
 effect give @a instant_health 1 9 false
 gamemode adventure @a
 spawnpoint @a -186 12 -56
