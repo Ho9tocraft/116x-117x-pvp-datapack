@@ -78,7 +78,7 @@ OptiFineの「Custom Item Texture」を利用し、適用する。
 　3. tags（タグ）
 　　だいたいサブルーチンのライブラリ化が目的
 
-#現行version: app ver.1.1.0/regulation ver.1.3.0
+#現行version: app ver.1.1.0/regulation ver.1.3.1
 tier 1 実装: app 1.0.0（済）
 tier 2 全実装: app 1.0.10（済）
 Minecraft 1.17.x対応: app 1.1.0（予定）
