@@ -6,6 +6,7 @@
             "offhand": {
                 "items": ["air"]
             }
-        }
+        },
+        "flags": {"is_sneaking": true}
     }
 }

@@ -6,7 +6,7 @@ execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-data
 execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Red] at @s as @e[tag=target_dsss_lightning_red] at @s run function ship-based-pvp-datapacks:trigger-process/lightning_bolt_storm
 execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Blue] at @s as @e[tag=target_dsss_lightning_blue] at @s run function ship-based-pvp-datapacks:trigger-process/lightning_bolt_storm
 #3.落雷のターゲットに（ry（エフェクト）
-execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Red] at @s as @e[tag=target_dsss_lightning_red] at @s run effect give @s instant_damage 40 2 false
+execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Red] at @s as @e[tag=target_dsss_lightning_red] at @s run effect give @s instant_damage 60 1 false
 execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Red] at @s as @e[tag=target_dsss_lightning_red] at @s run effect give @s slowness 3 3 false
 execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Red] at @s as @e[tag=target_dsss_lightning_red] at @s run effect give @s mining_fatigue 3 3 false
 execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear,team=Red] at @s as @e[tag=target_dsss_lightning_red] at @s run effect give @s wither 3 9 false

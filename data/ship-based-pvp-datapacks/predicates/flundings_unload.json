@@ -8,6 +8,7 @@
                 "nbt": "{citTexture:Flundings}",
                 "count": 7
             }
-        }
+        },
+        "flags": {"is_sneaking": true}
     }
 }
