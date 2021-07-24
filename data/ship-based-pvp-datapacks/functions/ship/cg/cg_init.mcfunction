@@ -9,7 +9,8 @@ execute as @s[scores={ship-num=12}] at @s run item replace entity @s armor.legs 
 execute as @s[scores={ship-num=12}] at @s run item replace entity @s armor.feet with iron_boots{display:{Name:'{"text":"戦士のブーツ","color":"white","bold":true,"italic":false}'},HideFlags:5,Unbreakable:1b,citTexture:Warrior,Enchantments:[{id:"minecraft:protection",lvl:4s},{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:12,Operation:0,UUID:[I;1219412672,833506889,-1825375690,343153224],Slot:"feet"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;-104093214,-166573005,-1242101498,-1522414962],Slot:"feet"}]} 1
 #mainhand
 execute as @s[scores={ship-num=12}] at @s run item replace entity @s hotbar.0 with bow{display:{Name:'{"text":"黒塗りの弓","color":"dark_gray","bold":true,"italic":false}'},HideFlags:5,Unbreakable:1b,citTexture:CG,Enchantments:[{id:"minecraft:power",lvl:6s},{id:"minecraft:infinity",lvl:1s}]} 1
-#offhand: none
+#offhand
+execute as @a[scores={ship-num=12}] at @s run item replace entity @s weapon.offhand with tipped_arrow{display:{Name:'{"text":"赤原猟犬","color":"red","bold":true,"italic":false}'},citTexture:Flundings,CustomPotionEffects:[{Id:7b,Amplifier:0b,Duration:1}]} 7
 #estus
 execute as @s[scores={ship-num=12}] at @s run item replace entity @s hotbar.1 with orange_dye{display:{Name:'{"text":"エスト瓶","bold":true,"italic":false}',Lore:['[{"text":"使用キー:","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow","bold":true,"italic":false}]','[{"text":"効果:","color":"gray","bold":true,"italic":false},{"text":"HPを回復","color":"white"}]']},HideFlags:1,citTexture:Estus,Enchantments:[{}]} 9
 #ashen estus
@@ -22,4 +23,5 @@ execute as @s[scores={ship-num=12}] at @s run scoreboard players set @s FocusPoi
 execute as @s[scores={ship-num=12}] at @s run give @s arrow 1
 #取説
 execute as @s[scores={ship-num=12}] at @s run item replace entity @s hotbar.8 with written_book{pages:['["",{"text":"HP\\uff1a","bold":true},{"text":"100\\n","color":"reset"},{"text":"FP\\uff1a","bold":true},{"text":"300\\n","color":"reset"},{"text":"\\u30e1\\u30a4\\u30f3\\u6b66\\u5668\\uff1a","bold":true},{"text":"\\u6295\\u5f71\\u6b66\\u5668\\n","color":"reset"},{"text":"\\u30aa\\u30d5\\u30cf\\u30f3\\u30c9\\uff1a","bold":true},{"text":"\\u306a\\u3057\\n","color":"reset"},{"text":"Counter Guardian","obfuscated":true},{"text":"\\u3068\\u5951\\u7d04\\u3057\\u3001\\u52a0\\u5bb3\\u8005\\u30fb\\u88ab\\u5bb3\\u8005\\u95a2\\u4fc2\\u306a\\u304f\\u6bba\\u3059\\u8077\\u696d\\u3060\\n\\u30e6\\u30cb\\u30fc\\u30af\\u30b9\\u30ad\\u30eb\\u306f\\u300c\\u6295\\u5f71\\u300d\\n\\u6b66\\u5668\\u306e\\u5207\\u308a\\u66ff\\u3048\\u3092\\u5b9f\\u884c\\u3059\\u308b","color":"reset"}]'],title:"職業説明文(抑止の守護者)",author:EMIYA,shipbased:true}
+execute as @s[scores={ship-num=12}] at @s run scoreboard players set @s TraceOn 0
 

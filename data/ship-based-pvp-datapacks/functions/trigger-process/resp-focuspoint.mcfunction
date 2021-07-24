@@ -13,3 +13,4 @@ execute as @s[scores={ship-num=8}] at @s run function ship-based-pvp-datapacks:s
 execute as @s[scores={ship-num=9}] at @s run function ship-based-pvp-datapacks:ship/raider/raider_init
 execute as @s[scores={ship-num=10}] at @s run function ship-based-pvp-datapacks:ship/sword-of-darkmoon/sword-of-darkmoon_init
 execute as @s[scores={ship-num=11}] at @s run function ship-based-pvp-datapacks:ship/pri-knight/pri-knight_init
+execute as @s[scores={ship-num=12}] at @s run function ship-based-pvp-datapacks:ship/cg/cg_init

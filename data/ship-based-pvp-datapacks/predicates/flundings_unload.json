@@ -3,13 +3,10 @@
     "entity": "this",
     "predicate": {
         "equipment": {
-            "mainhand": {
-                "items": ["bow"],
-                "nbt": "{citTexture:CG}"
-            },
             "offhand": {
                 "items": ["tipped_arrow"],
-                "nbt": "{citTexture:Flundings}"
+                "nbt": "{citTexture:Flundings}",
+                "count": 7
             }
         }
     }
