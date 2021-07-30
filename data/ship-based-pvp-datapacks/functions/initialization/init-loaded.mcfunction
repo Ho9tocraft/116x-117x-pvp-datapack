@@ -83,6 +83,8 @@ scoreboard objectives add TraceOn dummy
 scoreboard objectives add attack-det minecraft.custom:damage_dealt
 #Teamセレクト結果（一時的）
 scoreboard objectives add team-sel-rd-res dummy
+#readycheck判定用
+scoreboard objectives add readycheck trigger
 #△Player Owned
 
 #一応セット
