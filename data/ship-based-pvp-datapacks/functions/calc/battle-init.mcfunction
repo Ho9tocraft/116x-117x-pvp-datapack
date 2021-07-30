@@ -4,6 +4,7 @@ gamemode spectator @a[scores={ship-num=..0}]
 kill @e[type=item]
 gamemode adventure @a[scores={ship-num=1..}]
 function ship-based-pvp-datapacks:trigger-process/respawn-trigger
+function ship-based-pvp-datapacks:trigger-process/supply/stage-any_teamchest
 team leave @a[scores={ship-num=..0}]
 bossbar add prepare_time {"text": "準備時間"}
 bossbar set minecraft:prepare_time color blue

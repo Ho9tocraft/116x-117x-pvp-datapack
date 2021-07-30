@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["white_dye"],
+            "nbt": "{citTexture:summoner}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}

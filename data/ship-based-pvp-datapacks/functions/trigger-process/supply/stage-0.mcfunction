@@ -10,12 +10,12 @@ data modify block 368 96 -80 LootTable set value "ship-based-pvp-datapacks:suppl
 #05
 data modify block 368 104 -80 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #06
-data modify block 1191 92 215 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 319 94 -12 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #07
-data modify block 1240 46 220 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 319 104 -12 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #08
-data modify block 1230 51 220 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 319 114 -12 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #09
-data modify block 1238 59 240 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 292 97 6 LootTable set value "ship-based-pvp-datapacks:supply-chest"
 #10
-data modify block 1235 67 236 LootTable set value "ship-based-pvp-datapacks:supply-chest"
+data modify block 316 46 -49 LootTable set value "ship-based-pvp-datapacks:supply-chest"

@@ -15,6 +15,8 @@
         "ship-based-pvp-datapacks:skill/the-end-of-the-world",
         "ship-based-pvp-datapacks:skill/trace_on",
         "ship-based-pvp-datapacks:skill/warcry",
-        "#ship-based-pvp-datapacks:call-shopitemprocess"
+        "ship-based-pvp-datapacks:skill/summon-attacker",
+        "#ship-based-pvp-datapacks:call-shopitemprocess",
+        "#ship-based-pvp-datapacks:call-combat-arts"
     ]
 }

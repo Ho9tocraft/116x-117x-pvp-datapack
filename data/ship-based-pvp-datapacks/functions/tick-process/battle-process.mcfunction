@@ -52,6 +52,7 @@ execute if score #Helper timer_battle matches 0 run scoreboard players set #Help
 execute if score #Helper timer_battle matches 0 run effect give @a resistance 1000000 4 true
 execute if score #Helper timer_battle matches 0 run effect give @a regeneration 12 9 true
 execute if score #Helper timer_battle matches 0 run effect give @a saturation 1000000 9 true
+execute if score #Helper timer_battle matches 0 run kill @e[type=ravager]
 execute if score #Helper timer_battle matches 0 run title @a times 20 160 20
 execute if score #Helper timer_battle matches 0 run title @a title {"text":"Time Up! The Winner is..."}
 #リザルト表示

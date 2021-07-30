@@ -17,7 +17,6 @@ execute if score #Helper tick-sec_conv = #Helper tick-max as @a[predicate=!ship-
 #矢弾回収不可: 矢弾の回収が出来ない。
 execute as @e[type=arrow,nbt={inGround:true}] at @s run data modify entity @s pickup set value 2b
 kill @e[type=arrow,nbt={inGround:true,life:100s}]
-#通常矢弾回収不可: トレジャーボックス内の通常矢弾を回収出来ない。専用矢弾しか使えない。
 
 #覚醒ゲージチャージ: 覚醒ゲージのチャージングを実行する。
 execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 5 run scoreboard players add @s awake_gauge 1

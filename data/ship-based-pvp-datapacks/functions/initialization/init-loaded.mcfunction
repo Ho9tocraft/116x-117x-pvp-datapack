@@ -42,6 +42,8 @@ scoreboard objectives add token-sp-gold dummy
 scoreboard objectives add token-sp-diamond dummy
 #Tokenスポーン時間フェーズ
 scoreboard objectives add token-phase dummy
+#FLU演算トークン
+scoreboard objectives add flundings_token dummy
 #△Dummy Player[Helper]
 
 #▽Player Owned
@@ -57,7 +59,7 @@ scoreboard objectives add health-blue dummy
 scoreboard objectives add killcount-Temp deathCount
 #FP(他RPGで言うところのMPに相当する要素/0～)
 scoreboard objectives add FocusPoint dummy
-#リスポーンクールタイム(5 sec/-1～5:-1はリスポーンクールタイム不必要(Living))
+#リスポーンクールタイム(10 sec/-1～10:-1はリスポーンクールタイム不必要(Living))
 scoreboard objectives add respawn-time dummy
 #スキル1CT(0～)
 scoreboard objectives add skill1-ct dummy
@@ -134,6 +136,8 @@ scoreboard players set #Helper token-phase 0
 scoreboard players set @a health-blue 0
 scoreboard players set @a health-red 0
 scoreboard players set @a TraceOn 0
+#Token Flundings
+scoreboard players set #Helper flundings_token 0
 #△Dummy Player[Helper] Initialization
 
 #リストア・イニシャライザ

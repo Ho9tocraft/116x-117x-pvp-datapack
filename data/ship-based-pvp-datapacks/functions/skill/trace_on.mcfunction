@@ -13,13 +13,21 @@ execute as @a[scores={skill3-ct=0,ship-num=12,TraceOn=2,FocusPoint=30..},predica
 
 #赤原猟犬: 
 # 矢を軸とした半径15mの敵をターゲットし、追従する。スニークの必要はない。また、FPも消費しない。
-execute as @a[scores={ship-num=12,TraceOn=0},predicate=ship-based-pvp-datapacks:flundings] at @s as @e[type=arrow,distance=..3] at @s run tag @s add FLUNDINGS
+# DATA COMPARE START
+data remove storage flundings compare_uuid
+data remove storage flundings speed_controll
+execute as @a[scores={ship-num=12,TraceOn=0},predicate=ship-based-pvp-datapacks:flundings] at @s as @e[type=arrow,distance=..3] at @s run data modify storage flundings compare_uuid set from entity @s Owner
+execute as @a[scores={ship-num=12,TraceOn=0},predicate=ship-based-pvp-datapacks:flundings] at @s if entity @e[type=arrow,distance=..3] at @s store success score #Helper flundings_token run data modify storage flundings compare_uuid set from entity @s UUID
+# DATA COMPARE END
+# DATA COMPARE RESULT AFFECTION
+execute as @a[scores={ship-num=12,TraceOn=0},predicate=ship-based-pvp-datapacks:flundings] at @s as @e[type=arrow,distance=..3] at @s if score #Helper flundings_token matches 0 run tag @s add FLUNDINGS
+# DATA COMPARE RESULT AFFECTION END
 execute as @a[scores={ship-num=12,TraceOn=0},predicate=ship-based-pvp-datapacks:flundings,team=Red] at @s as @e[type=arrow,distance=..3,tag=FLUNDINGS] at @s run tag @s add FLUNDINGS_RED
 execute as @a[scores={ship-num=12,TraceOn=0},predicate=ship-based-pvp-datapacks:flundings,team=Blue] at @s as @e[type=arrow,distance=..3,tag=FLUNDINGS] at @s run tag @s add FLUNDINGS_BLU
 execute as @e[type=arrow,tag=FLUNDINGS] at @s run particle dust 1.000 0.271 0.000 1 ~ ~ ~ 0.15 0.15 0.15 1 10 normal
 execute as @e[type=arrow,tag=FLUNDINGS,tag=FLUNDINGS_RED,nbt={inGround:false}] at @s facing entity @e[team=Blue,distance=0.5..15,sort=nearest,limit=1] eyes run tp @s ^ ^ ^1.5
 execute as @e[type=arrow,tag=FLUNDINGS,tag=FLUNDINGS_BLU,nbt={inGround:false}] at @s facing entity @e[team=Red,distance=0.5..15,sort=nearest,limit=1] eyes run tp @s ^ ^ ^1.5
-# 弾数が1になった時、FPを5消費して赤原猟犬を自動装填(CT:10 sec, FP最低30必須)
+# 弾数が0になった時、FPを5消費して赤原猟犬を装填(CT:10 sec, FP最低30必須)
 execute if score #Helper CombatMode matches 2 as @a[scores={ship-num=12,TraceOn=0,skill3-ct=0,FocusPoint=30..},predicate=ship-based-pvp-datapacks:flundings_reload] at @s run scoreboard players remove @s FocusPoint 5
 execute if score #Helper CombatMode matches 2 as @a[scores={ship-num=12,TraceOn=0,skill3-ct=0,FocusPoint=25..},predicate=ship-based-pvp-datapacks:flundings_reload] at @s run item replace entity @s weapon.offhand with tipped_arrow{display:{Name:'{"text":"赤原猟犬","color":"red","bold":true,"italic":false}'},citTexture:Flundings,CustomPotionEffects:[{Id:7b,Amplifier:0b,Duration:1}]} 7
 

@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["golden_hoe"],
+            "nbt": "{citTexture:Sorcerer}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}
