@@ -43,7 +43,13 @@ effect clear @a wither
 effect clear @a blindness
 effect clear @a glowing
 effect clear @a luck
+effect clear @a health_boost
+effect give @a health_boost 1000000 4 true
+scoreboard players reset * health-spectate
 effect give @a instant_health 1 9 false
 gamemode adventure @a
 spawnpoint @a -186 12 -56
 tp @a -186 12 -56
+team leave *
+scoreboard players reset * health-red
+scoreboard players reset * health-blue

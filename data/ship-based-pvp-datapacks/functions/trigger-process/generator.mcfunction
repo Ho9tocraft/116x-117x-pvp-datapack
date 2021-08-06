@@ -19,6 +19,7 @@ execute if score #Helper CombatMode matches 2 if score #Helper token-phase match
 
 #3. Token Spawn
 execute if score #Helper stage-sel-result matches 0 run function ship-based-pvp-datapacks:trigger-process/generator/stage-0
+execute if score #Helper stage-sel-result matches 1 run function ship-based-pvp-datapacks:trigger-process/generator/stage-1
 
 #4. Token Timer Count Reset
 execute if score #Helper CombatMode matches 2 if score #Helper token-phase matches 0 if score #Helper token-sp-iron matches 15.. run scoreboard players set #Helper token-sp-iron 0
