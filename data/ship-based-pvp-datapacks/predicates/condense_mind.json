@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["light_blue_dye"],
+            "nbt": "{citTexture:condense_mind}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}

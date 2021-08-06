@@ -38,7 +38,8 @@ execute as @a[scores={ship-num=12..,skill1-ct=0},predicate=ship-based-pvp-datapa
 #CTを20にする
 execute as @a[scores={ship-num=12..,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run scoreboard players set @s skill1-ct 20
 #なくなり次第CTを60固定にする
-execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=12..},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=12..13},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=16..},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
 
 #エストの灰瓶 ship-num:1～5向け
 #FPを240回復する。ただし、上限を突破する場合、それで統合する
@@ -111,4 +112,5 @@ execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapa
 #CTを30(魔法使い系20)にする
 execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 #なくなり次第CTを60に固定する
-execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=12..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=12..13},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=16..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60
