@@ -7,8 +7,8 @@
 execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 6 run effect give @s weakness 30 2 false
 execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 3 run effect give @s mining_fatigue 45 3 false
 execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 8 run effect give @s slowness 15 4 false
-execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 6..8 unless score @s ship-num matches 13 run tag @s add awake_lostfp
-execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 6..8 unless score @s ship-num matches 13 run schedule function ship-based-pvp-datapacks:trigger-process/ultimate_after_after 45s
+execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 6..8 unless score @s ship-num matches 13..15 run tag @s add awake_lostfp
+execute as @a[scores={awake_gauge=0},tag=awake] at @s unless score @s ship-num matches 6..8 unless score @s ship-num matches 13..15 run schedule function ship-based-pvp-datapacks:trigger-process/ultimate_after_after 45s
 execute as @a[scores={awake_gauge=0},tag=awake] at @s run tag @s remove awake
 
 execute as @a[tag=awake_lostfp] at @s run scoreboard players set @s FocusPoint 0
