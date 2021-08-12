@@ -9,7 +9,7 @@ execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run effect gi
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run effect give @s speed 30 3 false
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run effect give @s dolphins_grace 30 0 false
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run effect give @s resistance 30 1 false
-execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run effect give @s weakness 1 1 false
+execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run effect give @s weakness 1 0 false
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run scoreboard players set @s FocusPoint 250
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 1 false
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 1 false

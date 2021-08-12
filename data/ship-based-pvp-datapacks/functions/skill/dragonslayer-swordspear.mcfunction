@@ -22,7 +22,7 @@ execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-data
 execute as @a[scores={skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear] at @s run scoreboard players remove @s FocusPoint 20
 #9. CTを設定
 execute as @a[scores={skill3-ct=0},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear] at @s if data entity @s SelectedItem.tag{consume:1b} run scoreboard players set @s skill3-ct 20
-execute as @a[scores={skill3-ct=0},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear] at @s unless data entity @s SelectedItem.tag{consume:1b} run scoreboard players set @s skill3-ct 30
+execute as @a[scores={skill3-ct=0},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear] at @s unless data entity @s SelectedItem.tag{consume:1b} run scoreboard players set @s skill3-ct 40
 #EXTRA. 姫騎士以外の竜狩りの剣槍を削除
 execute as @a[scores={skill3-ct=20},predicate=ship-based-pvp-datapacks:dragonslayer-swordspear] at @s run clear @s golden_sword{citTexture:NamelessKing,consume:1b} 1
 

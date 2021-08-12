@@ -15,3 +15,6 @@ execute as @s[scores={ship-num=10}] at @s run function ship-based-pvp-datapacks:
 execute as @s[scores={ship-num=11}] at @s run function ship-based-pvp-datapacks:ship/pri-knight/pri-knight_init
 execute as @s[scores={ship-num=12}] at @s run function ship-based-pvp-datapacks:ship/cg/cg_init
 execute as @s[scores={ship-num=13}] at @s run function ship-based-pvp-datapacks:ship/summoner/summoner_init
+execute as @s[scores={ship-num=14}] at @s run function ship-based-pvp-datapacks:ship/dancer/dancer_init
+#execute as @s[scores={ship-num=15}] at @s run function ship-based-pvp-datapacks:ship/dancer/dancer_init
+#execute as @s[scores={ship-num=16}] at @s run function ship-based-pvp-datapacks:ship/dancer/dancer_init
