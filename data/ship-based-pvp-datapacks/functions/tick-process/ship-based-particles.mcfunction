@@ -8,6 +8,11 @@
 #略奪者: 血（bloodborne）
 #暗月の剣: 蒼（誓約「暗月の剣」の誓約色）
 #姫騎士: 桜の花散る（元ネタなし）
+#抑止の守護者: 魂の灯火（蒼炎）
+#召喚士: 灯火（残り火）
+#バニーダンサー: オレンジ（バンザイ ダンス）
+#ボンバーマン: 灰（爆発の残り香）
+#鴉人: 灯火（残り火）
 
 execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=1..5}] at @s run particle flame ~ ~1 ~ 0.4 0.9 0.4 0 2 normal @a[distance=..7.5]
 execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=6}] at @s run particle soul_fire_flame ~ ~1 ~ 0.4 0.9 0.4 0 2 normal @a[distance=..7.5]
@@ -16,4 +21,9 @@ execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=8}] at @
 execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=9}] at @s run particle dust 1.000 0.000 0.000 1 ~ ~1 ~ 0.4 0.9 0.4 1 2 normal @a[distance=..7.5]
 execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=10}] at @s run particle dust 0.000 0.482 0.733 1 ~ ~1 ~ 0.4 0.9 0.4 1 2 normal @a[distance=..7.5]
 execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=11}] at @s run particle dust 0.996 0.957 0.957 1 ~ ~1 ~ 0.4 0.9 0.4 1 2 normal @a[distance=..7.5]
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=12}] at @s run particle soul_fire_flame ~ ~1 ~ 0.4 0.9 0.4 0 2 normal @a[distance=..7.5]
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=13}] at @s run particle flame ~ ~1 ~ 0.4 0.9 0.4 0 2 normal @a[distance=..7.5]
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=14}] at @s run particle dust 1.000 0.647 0.000 1 ~ ~1 ~ 0.4 0.9 0.4 1 2 normal @a[distance=..7.5]
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=15}] at @s run particle smoke ~ ~1 ~ 0.4 0.9 0.4 0 2 normal @a[distance=..7.5]
+execute if score #Helper CombatMode matches 0..2 as @a[scores={ship-num=16}] at @s run particle flame ~ ~1 ~ 0.4 0.9 0.4 0 2 normal @a[distance=..7.5]
 
