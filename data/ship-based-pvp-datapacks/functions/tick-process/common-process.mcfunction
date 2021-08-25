@@ -19,7 +19,7 @@ execute as @a[scores={ship-num=14,FocusPoint=..149},predicate=ship-based-pvp-dat
 #与ダメ観測: ship-num=6（火継ぎの魂振）のみ、攻撃する度にFPが減る。FP5未満で完全に攻撃不能になる。また、FP100未満で攻撃力4低下
 #　逆に、FP150以上の時は攻撃力にブースト効果が乗るように調整
 execute as @a[scores={ship-num=6,FocusPoint=5..,attack-det=1..}] at @s run scoreboard players remove @s FocusPoint 5
-execute as @a[scores={ship-num=6,FocusPoint=150..}] at @s run effect give @s strength 2 3 false
+execute as @a[scores={ship-num=6,FocusPoint=150..}] at @s run effect give @s strength 2 1 false
 execute as @a[scores={ship-num=6,FocusPoint=5..99}] at @s run effect give @s weakness 1 0 true
 execute as @a[scores={ship-num=6,FocusPoint=..4}] at @s run effect give @s weakness 1 255 true
 execute as @a[scores={ship-num=6,FocusPoint=..4}] at @s run effect give @s mining_fatigue 1 255 true
