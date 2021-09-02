@@ -25,9 +25,9 @@ tag @e[tag=target_dsss_lightning_red] remove target_dsss_lightning_red
 tag @e[tag=target_dsss_lightning_blue] remove target_dsss_lightning_blue
 #5. 即座に落雷
 execute as @e[type=armor_stand,tag=dsss_aoe_red_C] at @s run function ship-based-pvp-datapacks:trigger-process/lightning_bolt_storm
-execute as @e[type=armor_stand,tag=dsss_aoe_red_C] at @s as @e[team=Blue,distance=..10] at @s run effect give @s instant_damage 30 1 false
+execute as @e[type=armor_stand,tag=dsss_aoe_red_C] at @s as @e[team=Blue,distance=..10] at @s run effect give @s instant_damage 30 0 false
 execute as @e[type=armor_stand,tag=dsss_aoe_blue_C] at @s run function ship-based-pvp-datapacks:trigger-process/lightning_bolt_storm
-execute as @e[type=armor_stand,tag=dsss_aoe_blue_C] at @s as @e[team=Red,distance=..10] at @s run effect give @s instant_damage 30 1 false
+execute as @e[type=armor_stand,tag=dsss_aoe_blue_C] at @s as @e[team=Red,distance=..10] at @s run effect give @s instant_damage 30 0 false
 #6. armor_standを削除
 kill @e[team=Red,type=armor_stand]
 kill @e[team=Blue,type=armor_stand]
