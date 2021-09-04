@@ -17,7 +17,7 @@ execute as @s[scores={ship-num=16}] at @s run item replace entity @s hotbar.1 wi
 ## ashen estus（hotbar.2）
 execute as @s[scores={ship-num=16}] at @s run item replace entity @s hotbar.2 with light_blue_dye{display:{Name:'{"text":"エストの灰瓶","bold":true,"italic":false}',Lore:['[{"text":"使用キー:","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow","bold":true,"italic":false}]','[{"text":"効果:","color":"gray","bold":true,"italic":false},{"text":"FPを回復","color":"white"}]']},HideFlags:1,citTexture:Estus,Enchantments:[{}]} 3
 ## unique skill（hotbar.3）
-execute as @s[scores={ship-num=16}] at @s run item replace entity @s hotbar.3 with green_dye{display:{Name:'{"text":"アサルトキャノン","color":"yellow","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow"}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"前方30mの敵を焼き尽くす","color":"yellow","bold":true,"italic":false}]','[{"text":"CT: ","color":"gray","bold":true,"italic":false},{"text":"60 sec","color":"yellow"}]']}} 1
+execute as @s[scores={ship-num=16}] at @s run item replace entity @s hotbar.3 with lime_dye{display:{Name:'{"text":"アサルトキャノン","color":"yellow","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow"}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"前方30mの敵を焼き尽くす","color":"yellow","bold":true,"italic":false}]','[{"text":"CT: ","color":"gray","bold":true,"italic":false},{"text":"60 sec","color":"yellow"}]']},citTexture:assalt-cannon} 1
 #endregion
 #FocusPoint
 execute as @s[scores={ship-num=16}] at @s run scoreboard players set @s FocusPoint 200

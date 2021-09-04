@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["lime_dye"],
+            "nbt": "{citTexture:assalt-cannon}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}
