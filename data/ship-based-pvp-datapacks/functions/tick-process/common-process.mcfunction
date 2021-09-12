@@ -14,6 +14,8 @@ execute as @a[scores={ship-num=11,FocusPoint=..299},predicate=ship-based-pvp-dat
 execute as @a[scores={ship-num=12,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=13,FocusPoint=..299},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
 execute as @a[scores={ship-num=14,FocusPoint=..149},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=15,FocusPoint=..149},predicate=ship-based-pvp-datapacks:focus-point-autoregen-shootingsoul] at @s run scoreboard players add @s FocusPoint 1
+execute as @a[scores={ship-num=16,FocusPoint=..199},predicate=ship-based-pvp-datapacks:focus-point-autoregen-hunter] at @s run scoreboard players add @s FocusPoint 1
 
 
 #与ダメ観測: ship-num=6（火継ぎの魂振）のみ、攻撃する度にFPが減る。FP5未満で完全に攻撃不能になる。また、FP100未満で攻撃力4低下
