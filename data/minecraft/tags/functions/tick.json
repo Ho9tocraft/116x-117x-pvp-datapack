@@ -10,6 +10,7 @@
         "ship-based-pvp-datapacks:tick-process/auto-regeneration",
         "ship-based-pvp-datapacks:initialization/restore-init",
         "ship-based-pvp-datapacks:tick-process/pestilent-mist_secondsprocess",
-        "ship-based-pvp-datapacks:tick-process/ship-based-particles"
+        "ship-based-pvp-datapacks:tick-process/ship-based-particles",
+        "ship-based-pvp-datapacks:tick-process/match-auto-spectate"
     ]
 }
