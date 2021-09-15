@@ -15,6 +15,7 @@
         "ship-based-pvp-datapacks:ship/cg/cg_init",
         "ship-based-pvp-datapacks:ship/summoner/summoner_init",
         "ship-based-pvp-datapacks:ship/dancer/dancer_init",
-        "ship-based-pvp-datapacks:ship/birdman/birdman_init"
+        "ship-based-pvp-datapacks:ship/birdman/birdman_init",
+        "ship-based-pvp-datapacks:ship/necromancer/necromancer_init"
     ]
 }
