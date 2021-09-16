@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dragon_egg"
+        },
+        "title": {"text": "竜の学院"},
+        "frame": "challenge",
+        "description": {"text": "魔術師で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "sorcerer-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

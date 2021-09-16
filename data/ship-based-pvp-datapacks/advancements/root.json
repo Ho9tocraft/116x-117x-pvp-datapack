@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:crafting_table"
+        },
+        "title": {"text": "Ship-based Player VS Player Datapack"},
+        "description": {"text": "職業選択式PvPデータパックの実績の始まり"},
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "frame": "task",
+        "announce_to_chat": false,
+        "hidden": false,
+        "show_toast": false
+    },
+    "criteria": {
+        "ho9tocraft-auto-unlock":{
+            "trigger": "minecraft:tick"
+        }
+    }
+}

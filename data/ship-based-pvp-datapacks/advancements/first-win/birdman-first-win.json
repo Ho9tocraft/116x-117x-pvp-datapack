@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {"text": "人類種の天敵"},
+        "frame": "challenge",
+        "description": {"text": "鴉人で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "birdman-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

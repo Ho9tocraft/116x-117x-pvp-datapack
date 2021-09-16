@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_sword",
+            "nbt": "{citTexture:Tamafuri}"
+        },
+        "title": {"text": "魂振る者の祈る答え"},
+        "frame": "challenge",
+        "description": {"text": "火継ぎの魂振で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "divine-firelinker-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

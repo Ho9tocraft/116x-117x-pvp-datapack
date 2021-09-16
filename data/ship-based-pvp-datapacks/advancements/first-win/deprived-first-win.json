@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:nether_quartz_ore"
+        },
+        "title": {"text": "廃棄口"},
+        "frame": "challenge",
+        "description": {"text": "持たざる者で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "deprived-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

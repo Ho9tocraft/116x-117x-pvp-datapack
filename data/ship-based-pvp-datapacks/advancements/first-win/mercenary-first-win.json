@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "iron_sword",
+            "nbt": "{citTexture:Mercenary}"
+        },
+        "title": {"text": "浮遊島の王"},
+        "frame": "challenge",
+        "description": {"text": "傭兵で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "mercenary-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

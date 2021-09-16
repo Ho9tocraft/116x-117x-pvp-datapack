@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tnt"
+        },
+        "title": {"text": "流星一条"},
+        "frame": "challenge",
+        "description": {"text": "ボンバーマンで初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "bomber-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

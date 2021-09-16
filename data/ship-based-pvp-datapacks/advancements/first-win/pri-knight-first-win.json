@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_sword",
+            "nbt": "{citTexture:NamelessKing}"
+        },
+        "title": {"text": "竜狩りの姫騎士", "color": "gold"},
+        "frame": "challenge",
+        "description": {"text": "姫騎士で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "princess-knight-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:smooth_stone"
+        },
+        "title": {"text": "掃除屋"},
+        "frame": "challenge",
+        "description": {"text": "抑止の守護者で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "cg-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

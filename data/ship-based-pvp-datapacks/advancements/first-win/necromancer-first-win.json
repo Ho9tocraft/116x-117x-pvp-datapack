@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "title": {"text": "巫覡"},
+        "frame": "challenge",
+        "description": {"text": "死霊術師で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "necromancer-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

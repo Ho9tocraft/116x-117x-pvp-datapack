@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "iron_sword"
+        },
+        "title": {"text": "燃え殻の魂"},
+        "frame": "challenge",
+        "description": {"text": "騎士で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "knight-first-win":{
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cake"
+        },
+        "title": {"text": "ふたりがけ"},
+        "frame": "challenge",
+        "description": {"text": "召喚士で初勝利を飾る"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "summoner-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
