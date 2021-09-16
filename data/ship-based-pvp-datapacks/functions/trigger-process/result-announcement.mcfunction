@@ -7,11 +7,13 @@ execute if score #Helper point-red = #Helper point-blue run title @a subtitle ["
 execute if score #Helper point-red = #Helper point-blue run title @a title {"text":"Draw...","bold":true,"color":"green"}
 
 #Red勝利
+execute if score #Helper point-red > #Helper point-blue as @a[team=Red] at @s run function ship-based-pvp-datapacks:advancements/advancement_approved
 execute if score #Helper point-red > #Helper point-blue run title @a times 20 160 20
 execute if score #Helper point-red > #Helper point-blue run title @a subtitle ["",{"score":{"name":"#Helper","objective":"point-red"},"color":"red"},{"text":" - "},{"score":{"name":"#Helper","objective":"point-blue"},"color":"blue"}]
 execute if score #Helper point-red > #Helper point-blue run title @a title {"text":"Red","bold":true,"color":"red"}
 
 #Blue勝利
+execute if score #Helper point-red < #Helper point-blue as @a[team=Blue] at @s run function ship-based-pvp-datapacks:advancements/advancement_approved
 execute if score #Helper point-red < #Helper point-blue run title @a times 20 160 20
 execute if score #Helper point-red < #Helper point-blue run title @a subtitle ["",{"score":{"name":"#Helper","objective":"point-red"},"color":"red"},{"text":" - "},{"score":{"name":"#Helper","objective":"point-blue"},"color":"blue"}]
 execute if score #Helper point-red < #Helper point-blue run title @a title {"text":"Blue","bold":true,"color":"blue"}
