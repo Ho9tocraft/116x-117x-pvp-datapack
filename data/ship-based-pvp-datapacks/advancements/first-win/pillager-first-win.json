@@ -3,9 +3,9 @@
         "icon": {
             "item": "minecraft:emerald_block"
         },
-        "title": {"text": "勧悪懲善"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.9.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "略奪者で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.9.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

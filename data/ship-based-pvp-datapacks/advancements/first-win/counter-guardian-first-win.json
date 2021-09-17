@@ -3,9 +3,9 @@
         "icon": {
             "item": "minecraft:smooth_stone"
         },
-        "title": {"text": "掃除屋"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.12.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "抑止の守護者で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.12.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

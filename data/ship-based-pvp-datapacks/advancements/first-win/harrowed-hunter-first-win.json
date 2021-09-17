@@ -3,9 +3,9 @@
         "icon": {
             "item": "minecraft:bow"
         },
-        "title": {"text": "弓で獣に挑むなどと"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.7.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "やつしの狩人で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.7.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

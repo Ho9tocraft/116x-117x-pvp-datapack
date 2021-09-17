@@ -4,9 +4,9 @@
             "item": "iron_sword",
             "nbt": "{citTexture:Mercenary}"
         },
-        "title": {"text": "浮遊島の王"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.2.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "傭兵で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.2.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

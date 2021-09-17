@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword",
+            "nbt": "{citTexture:Tamafuri-skill}"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.6.title","color": "green"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.6.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/divine-firelinker-first-win",
+    "criteria": {
+        "divine-firelinker-strike": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

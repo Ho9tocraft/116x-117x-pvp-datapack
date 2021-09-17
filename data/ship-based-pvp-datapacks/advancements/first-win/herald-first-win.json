@@ -3,9 +3,9 @@
         "icon": {
             "item": "trident"
         },
-        "title": {"text": "弾き避け"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.4.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "伝令で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.4.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

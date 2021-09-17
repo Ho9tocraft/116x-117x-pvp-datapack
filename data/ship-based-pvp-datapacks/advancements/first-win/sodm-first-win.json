@@ -4,9 +4,9 @@
             "item": "minecraft:netherite_sword",
             "nbt": "{citTexture:kichigai}"
         },
-        "title": {"text": "玉葱の歌"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.10.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "暗月の剣で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.10.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

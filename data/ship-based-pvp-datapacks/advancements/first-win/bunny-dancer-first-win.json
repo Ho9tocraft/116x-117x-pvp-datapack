@@ -3,9 +3,9 @@
         "icon": {
             "item": "minecraft:chest"
         },
-        "title": {"text": "クリムゾンロータス"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.14.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "バニーダンサーで初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.14.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

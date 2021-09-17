@@ -3,9 +3,9 @@
         "icon": {
             "item": "iron_sword"
         },
-        "title": {"text": "燃え殻の魂"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.1.title", "color": "green"},
         "frame": "challenge",
-        "description": {"text": "騎士で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.1.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

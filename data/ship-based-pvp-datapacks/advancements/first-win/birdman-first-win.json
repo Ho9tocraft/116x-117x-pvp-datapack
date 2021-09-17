@@ -3,9 +3,9 @@
         "icon": {
             "item": "minecraft:elytra"
         },
-        "title": {"text": "人類種の天敵"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.16.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "鴉人で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.16.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {

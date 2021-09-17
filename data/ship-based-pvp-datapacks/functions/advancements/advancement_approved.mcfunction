@@ -1,4 +1,5 @@
 #進捗の解除用関数
+execute as @s[scores={ship-num=1..}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/anyone_first-win
 execute as @s[scores={ship-num=1}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/knight-first-win
 execute as @s[scores={ship-num=2}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/mercenary-first-win
 execute as @s[scores={ship-num=3}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/warrior-first-win

@@ -4,9 +4,9 @@
             "item": "iron_axe",
             "nbt": "{citTexture:Warrior}"
         },
-        "title": {"text": "ベッドを壊さないで！"},
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.3.title","color": "green"},
         "frame": "challenge",
-        "description": {"text": "戦士で初勝利を飾る"}
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.3.description"}
     },
     "parent": "ship-based-pvp-datapacks:root",
     "criteria": {
