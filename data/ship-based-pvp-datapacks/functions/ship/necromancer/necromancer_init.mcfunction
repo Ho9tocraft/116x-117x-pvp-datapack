@@ -14,7 +14,7 @@ execute as @s[scores={ship-num=17}] at @s run item replace entity @s hotbar.1 wi
 #ashen estus
 execute as @s[scores={ship-num=17}] at @s run item replace entity @s hotbar.2 with light_blue_dye{display:{Name:'{"text":"エストの灰瓶","bold":true,"italic":false}',Lore:['[{"text":"使用キー:","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow","bold":true,"italic":false}]','[{"text":"効果:","color":"gray","bold":true,"italic":false},{"text":"FPを回復","color":"white"}]']},HideFlags:1,citTexture:Estus,Enchantments:[{}]} 6
 #unique skill
-execute as @s[scores={ship-num=17}] at @s run item replace entity @s hotbar.3 with white_dye{display:{Name:'{"text":"従者召喚","color":"white","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow"}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"従者を召喚する","color":"yellow"}]','[{"text":"CT: ","color":"gray"},{"text":"120 sec","color":"yellow"}]']},citTexture:summoner} 1
+execute as @s[scores={ship-num=17}] at @s run item replace entity @s hotbar.3 with white_dye{display:{Name:'{"text":"従者召喚","color":"white","bold":true,"italic":false}',Lore:['[{"text":"使用キー: ","color":"gray","bold":true,"italic":false},{"keybind":"key.sneak","color":"yellow"}]','[{"text":"効果: ","color":"gray","bold":true,"italic":false},{"text":"従者を召喚する","color":"yellow"}]','[{"text":"CT: ","color":"gray"},{"text":"25 sec","color":"yellow"}]']},citTexture:summoner} 1
 #FocusPoint
 execute as @s[scores={ship-num=17}] at @s run scoreboard players set @s FocusPoint 300
 #おまけ
