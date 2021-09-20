@@ -44,6 +44,11 @@ scoreboard objectives add token-sp-diamond dummy
 scoreboard objectives add token-phase dummy
 #FLU演算トークン
 scoreboard objectives add flundings_token dummy
+#召喚系職業召喚制限（0～4）
+# n: 死霊術師（0～4）
+# r: 召喚士（0～1）
+scoreboard objectives add summon_limit_n dummy
+scoreboard objectives add summon_limit_r dummy
 #△Dummy Player[Helper]
 
 #▽Player Owned
@@ -67,6 +72,8 @@ scoreboard objectives add skill1-ct dummy
 scoreboard objectives add skill2-ct dummy
 #スキル3CT(0～)
 scoreboard objectives add skill3-ct dummy
+#スキル4CT(0～)
+scoreboard objectives add skill4-ct dummy
 #STゲージ（※満腹度）
 scoreboard objectives add stamina food
 #盾受け

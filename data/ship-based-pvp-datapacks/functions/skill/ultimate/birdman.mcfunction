@@ -14,10 +14,8 @@ execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..8,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 0
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..8,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 0
 #根元～4m: ウィザー状態＆毒状態[10 sec]（非アンデッド）／即時回復Ⅱ（アンデッド）
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 9
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 9
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s poison 10 9
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s poison 10 9
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake] at @s run particle dust 0.000 0.980 0.604 1 ~ ~1 ~ 8 8 8 1 400 normal @a[distance=..30]

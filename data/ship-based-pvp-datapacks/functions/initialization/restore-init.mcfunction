@@ -6,5 +6,6 @@ scoreboard players set @a[tag=!InitComplete] ship-num 0
 scoreboard players set @a[tag=!InitComplete] skill1-ct 0
 scoreboard players set @a[tag=!InitComplete] skill2-ct 0
 scoreboard players set @a[tag=!InitComplete] skill3-ct 0
+scoreboard players set @a[tag=!InitComplete] skill4-ct 0
 execute as @a[tag=!InitComplete] at @s run function ho9tocraft:item-sample/ship-select
 tag @a[tag=!InitComplete] add InitComplete

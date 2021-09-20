@@ -39,7 +39,8 @@ execute as @a[scores={ship-num=12..,skill1-ct=0},predicate=ship-based-pvp-datapa
 execute as @a[scores={ship-num=12..,skill1-ct=0},predicate=ship-based-pvp-datapacks:estus-frask] at @s run scoreboard players set @s skill1-ct 20
 #なくなり次第CTを60固定にする
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=12..13},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
-execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=16..},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=16..19},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=21..},nbt=!{Inventory:[{id:"minecraft:orange_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill1-ct 60
 
 #エストの灰瓶 ship-num:1～5向け
 #FPを240回復する。ただし、上限を突破する場合、それで統合する
@@ -108,6 +109,7 @@ execute as @a[scores={ship-num=16..,skill2-ct=0},predicate=ship-based-pvp-datapa
 execute as @a[scores={ship-num=12..13,skill2-ct=0,FocusPoint=301..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 300
 execute as @a[scores={ship-num=16,skill2-ct=0,FocusPoint=201..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 200
 execute as @a[scores={ship-num=17,skill2-ct=0,FocusPoint=301..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 300
+execute as @a[scores={ship-num=18..19,skill2-ct=0,FocusPoint=251..},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s FocusPoint 250
 #灰エスト回復エフェクト
 execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run particle dust 0.698 0.796 0.894 1 ~ ~ ~ 0.5 0.5 0.5 1 20 normal @a
 #エストの灰瓶を1個減らす
@@ -116,4 +118,5 @@ execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapa
 execute as @a[scores={ship-num=12..,skill2-ct=0},predicate=ship-based-pvp-datapacks:ashen-estus-frask] at @s run scoreboard players set @s skill2-ct 30
 #なくなり次第CTを60に固定する
 execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=12..13},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60
-execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=16..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=16..19},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60
+execute if score #Helper CombatMode matches 2.. as @a[scores={ship-num=21..},nbt=!{Inventory:[{id:"minecraft:light_blue_dye",tag:{citTexture:Estus}}]}] at @s run scoreboard players set @s skill2-ct 60

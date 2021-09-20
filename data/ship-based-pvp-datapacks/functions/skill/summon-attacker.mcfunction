@@ -1,7 +1,7 @@
 #召喚獣召喚コマンドです。
 #1.-a: ラヴェジャーを召喚・使役
-execute as @a[scores={ship-num=13,skill3-ct=0,FocusPoint=120..},predicate=ship-based-pvp-datapacks:summon_beast,team=Red] at @s run summon ravager ~ ~ ~ {Team:"Red",PersistenceRequired:1b,Health:200f,AttackTick:0,RoarTick:0,StunTick:0,PatrolLeader:0b,Patrolling:0b,HasRaidGoal:0b,CanJoinRaid:0b,Tags:["SummonPet"],Attributes:[{Name:"generic.max_health",Base:200},{Name:"generic.attack_damage",Base:25},{Name:"generic.armor",Base:10},{Name:"generic.follow_range",Base:128}],Glowing:true,DeathLootTable:"minecraft:empty"}
-execute as @a[scores={ship-num=13,skill3-ct=0,FocusPoint=120..},predicate=ship-based-pvp-datapacks:summon_beast,team=Blue] at @s run summon ravager ~ ~ ~ {Team:"Blue",PersistenceRequired:1b,Health:200f,AttackTick:0,RoarTick:0,StunTick:0,PatrolLeader:0b,Patrolling:0b,HasRaidGoal:0b,CanJoinRaid:0b,Tags:["SummonPet"],Attributes:[{Name:"generic.max_health",Base:200},{Name:"generic.attack_damage",Base:25},{Name:"generic.armor",Base:10},{Name:"generic.follow_range",Base:128}],Glowing:true,DeathLootTable:"minecraft:empty"}
+execute if score #Helper_Red summon_limit_r matches 0 as @a[scores={ship-num=13,skill3-ct=0,FocusPoint=120..},predicate=ship-based-pvp-datapacks:summon_beast,team=Red] at @s run summon ravager ~ ~ ~ {Team:"Red",PersistenceRequired:1b,Health:200f,AttackTick:0,RoarTick:0,StunTick:0,PatrolLeader:0b,Patrolling:0b,HasRaidGoal:0b,CanJoinRaid:0b,Tags:["SummonPet"],Attributes:[{Name:"generic.max_health",Base:200},{Name:"generic.attack_damage",Base:25},{Name:"generic.armor",Base:10},{Name:"generic.follow_range",Base:128}],Glowing:true,DeathLootTable:"minecraft:empty"}
+execute if score #Helper_Blue summon_limit_r matches 0 as @a[scores={ship-num=13,skill3-ct=0,FocusPoint=120..},predicate=ship-based-pvp-datapacks:summon_beast,team=Blue] at @s run summon ravager ~ ~ ~ {Team:"Blue",PersistenceRequired:1b,Health:200f,AttackTick:0,RoarTick:0,StunTick:0,PatrolLeader:0b,Patrolling:0b,HasRaidGoal:0b,CanJoinRaid:0b,Tags:["SummonPet"],Attributes:[{Name:"generic.max_health",Base:200},{Name:"generic.attack_damage",Base:25},{Name:"generic.armor",Base:10},{Name:"generic.follow_range",Base:128}],Glowing:true,DeathLootTable:"minecraft:empty"}
 #1.-b: ラヴェジャーの初期設定
 #1.-b-i: スキル1: 再生の咆哮(CT60sec、5秒後に開始)
 execute as @a[scores={ship-num=13,skill3-ct=0,FocusPoint=120..},predicate=ship-based-pvp-datapacks:summon_beast] at @s as @e[tag=SummonPet,type=ravager] at @s run scoreboard players set @s skill1-ct 5
@@ -18,6 +18,12 @@ execute as @a[scores={ship-num=13,skill3-ct=0,FocusPoint=120..},predicate=ship-b
 execute as @a[scores={ship-num=13,skill3-ct=0},predicate=ship-based-pvp-datapacks:summon_beast] at @s run scoreboard players set @s skill3-ct 120
 #2.-c: FP不足処理（CT: 5 sec継続）
 execute as @a[scores={ship-num=13,skill3-ct=..5,FocusPoint=..119}] at @s run scoreboard players set @s skill3-ct 5
+# FP不足処理と同じ扱いを行う
+execute if score #Helper_Red summon_limit_r matches 1.. as @a[scores={ship-num=13,skill3-ct=..5},team=Red] at @s run scoreboard players set @s skill3-ct 5
+execute if score #Helper_Blue summon_limit_r matches 1.. as @a[scores={ship-num=13,skill3-ct=..5},team=Blue] at @s run scoreboard players set @s skill3-ct 5
+#2.-d: 現在の召喚数を確認
+execute store result score #Helper_Red summon_limit_r run execute if entity @e[type=ravager,tag=SummonPet,team=Red]
+execute store result score #Helper_Blue summon_limit_r run execute if entity @e[type=ravager,tag=SummonPet,team=Blue]
 
 #3. ラヴェジャーのスキル効果処理
 execute as @e[scores={skill3-ct=0},predicate=ship-based-pvp-datapacks:entity_target/summoned_ravager] at @s run function ship-based-pvp-datapacks:skill/summoned_ravager/stasis_roar
