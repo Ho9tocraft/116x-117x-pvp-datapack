@@ -92,10 +92,43 @@ scoreboard objectives add attack-det minecraft.custom:damage_dealt
 scoreboard objectives add team-sel-rd-res dummy
 #readycheck判定用
 scoreboard objectives add readycheck trigger
+#職業データ別勝利回数
+scoreboard objectives add ship-any-win dummy
+scoreboard objectives add ship-01-win dummy
+scoreboard objectives add ship-02-win dummy
+scoreboard objectives add ship-03-win dummy
+scoreboard objectives add ship-04-win dummy
+scoreboard objectives add ship-05-win dummy
+scoreboard objectives add ship-06-win dummy
+scoreboard objectives add ship-07-win dummy
+scoreboard objectives add ship-08-win dummy
+scoreboard objectives add ship-09-win dummy
+scoreboard objectives add ship-10-win dummy
+scoreboard objectives add ship-11-win dummy
+scoreboard objectives add ship-12-win dummy
+scoreboard objectives add ship-13-win dummy
+scoreboard objectives add ship-14-win dummy
+scoreboard objectives add ship-15-win dummy
+scoreboard objectives add ship-16-win dummy
+scoreboard objectives add ship-17-win dummy
+scoreboard objectives add ship-18-win dummy
+scoreboard objectives add ship-19-win dummy
+scoreboard objectives add ship-20-win dummy
+scoreboard objectives add ship-21-win dummy
+scoreboard objectives add ship-22-win dummy
+scoreboard objectives add ship-23-win dummy
+scoreboard objectives add ship-24-win dummy
+scoreboard objectives add ship-25-win dummy
+scoreboard objectives add ship-26-win dummy
+scoreboard objectives add ship-27-win dummy
+scoreboard objectives add ship-28-win dummy
+scoreboard objectives add ship-29-win dummy
+scoreboard objectives add ship-30-win dummy
 #△Player Owned
 
 #一応セット
 scoreboard objectives setdisplay sidebar ship-num
+scoreboard objectives setdisplay list ship-any-win
 
 #▽Team Detector
 team add Red {"text": "赤チーム"}

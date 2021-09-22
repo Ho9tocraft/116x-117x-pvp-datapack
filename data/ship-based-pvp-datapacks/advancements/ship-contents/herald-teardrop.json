@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ghast_tear"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.4.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.4.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/herald-first-win",
+    "criteria": {
+        "tears-of-denial": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

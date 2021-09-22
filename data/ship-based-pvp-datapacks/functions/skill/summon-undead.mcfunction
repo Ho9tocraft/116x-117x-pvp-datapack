@@ -30,8 +30,8 @@ execute as @a[scores={ship-num=17,skill3-ct=0},predicate=ship-based-pvp-datapack
 ## FP不足処理
 execute as @a[scores={ship-num=17,skill3-ct=..5,FocusPoint=..59}] at @s run scoreboard players set @s skill3-ct 5
 # 召喚数の制限に到達した際にもskill3-ctを5にする
-execute if score #Helper_Red summon_limit_n matches 4.. as @a[scores={ship-num=17,skill3-ct=..5},team=Red] at @s run scoreboard players set @s skill3-ct 5
-execute if score #Helper_Blue summon_limit_n matches 4.. as @a[scores={ship-num=17,skill3-ct=..5},team=Blue] at @s run scoreboard players set @s skill3-ct 5
+execute if score #Helper_Red summon_limit_n matches 1.. as @a[scores={ship-num=17,skill3-ct=..5},team=Red] at @s run scoreboard players set @s skill3-ct 5
+execute if score #Helper_Blue summon_limit_n matches 1.. as @a[scores={ship-num=17,skill3-ct=..5},team=Blue] at @s run scoreboard players set @s skill3-ct 5
 ## 現在召喚モブ数確認
 execute store result score #Helper_Red summon_limit_n run execute if entity @e[type=#ship-based-pvp-datapacks:undead,tag=necro_initialized,team=Red]
 execute store result score #Helper_Blue summon_limit_n run execute if entity @e[type=#ship-based-pvp-datapacks:undead,tag=necro_initialized,team=Blue]

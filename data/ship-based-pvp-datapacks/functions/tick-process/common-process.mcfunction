@@ -35,7 +35,7 @@ execute as @a[scores={attack-det=1..}] at @s run scoreboard players set @s attac
 #region 水中突入時ダメージ付加
 ## 水中突入時ダメージ付加: 水中に潜ると足をつけているだけでもダメージ。ただし、ID:2（SUBNAUTICA）は例外として、ダメージを受けない
 execute as @a[scores={ship-num=1..}] at @s unless score #Helper stage-sel-result matches 2 if block ~ ~ ~ water run effect give @s instant_damage 4 0 false
-execute as @e[type=#ship-based-pvp-datapacks:undead] at @s if block ~ ~-1 ~ water run kill @s
+execute as @e[type=#ship-based-pvp-datapacks:undead] at @s if block ~ ~ ~ water run kill @s
 
 ## 溶岩突入時ダメージ付加: 溶岩ダイブすると足をつけているだけでも大ダメージ。
 execute as @a[scores={ship-num=1..}] at @s if block ~ ~ ~ lava run effect give @s instant_damage 4 1 false

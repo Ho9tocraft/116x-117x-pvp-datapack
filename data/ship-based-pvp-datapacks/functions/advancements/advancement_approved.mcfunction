@@ -1,4 +1,5 @@
 #進捗の解除用関数
+execute as @s[scores={ship-num=1..}] at @s run function ship-based-pvp-datapacks:trigger-process/winning-counting
 execute as @s[scores={ship-num=1..}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/anyone_first-win
 execute as @s[scores={ship-num=1}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/knight-first-win
 execute as @s[scores={ship-num=2}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/mercenary-first-win
@@ -17,3 +18,6 @@ execute as @s[scores={ship-num=14}] at @s run advancement grant @s only ship-bas
 execute as @s[scores={ship-num=15}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/bomberman-first-win
 execute as @s[scores={ship-num=16}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/birdman-first-win
 execute as @s[scores={ship-num=17}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/necromancer-first-win
+execute as @s[scores={ship-num=18}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/ruler-first-win
+execute as @s[scores={ship-num=19}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/gravekeeper-first-win
+execute as @s[scores={ship-num=20}] at @s run advancement grant @s only ship-based-pvp-datapacks:first-win/flower-wizard-first-win

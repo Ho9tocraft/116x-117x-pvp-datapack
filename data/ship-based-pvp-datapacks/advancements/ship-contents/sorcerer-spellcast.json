@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dragon_breath"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.5.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.5.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/sorcerer-first-win",
+    "criteria": {
+        "sorcerer-spellcast": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

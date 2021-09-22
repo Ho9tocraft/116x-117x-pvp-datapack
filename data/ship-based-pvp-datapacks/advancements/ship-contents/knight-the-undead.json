@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:yellow_dye",
+            "nbt": "{citTexture:Sacred-Oath}"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.1.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.1.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/knight-first-win",
+    "criteria": {
+        "sacred-oath-using": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

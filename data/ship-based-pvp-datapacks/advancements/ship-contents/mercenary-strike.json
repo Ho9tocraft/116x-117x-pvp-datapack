@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:poppy"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.2.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.2.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/mercenary-first-win",
+    "criteria": {
+        "carthus-rouge": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
