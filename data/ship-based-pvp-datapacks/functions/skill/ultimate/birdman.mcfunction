@@ -8,17 +8,17 @@ execute as @a[scores={ship-num=16,FocusPoint=..199,awake_gauge=1..},predicate=sh
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,nbt={AbsorptionAmount:0.0F}] at @s run effect give @s absorption 60 4
 
 #距離減衰型
-#～8m: 即時ダメージⅠ（非アンデッド）／即時回復Ⅰ（アンデッド）
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..8,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 0
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..8,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 0
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..8,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 0
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..8,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 0
-#根元～4m: ウィザー状態＆毒状態[10 sec]（非アンデッド）／即時回復Ⅱ（アンデッド）
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake] at @s run particle dust 0.000 0.980 0.604 1 ~ ~1 ~ 8 8 8 1 400 normal @a[distance=..30]
+#～3m: 即時ダメージⅠ（非アンデッド）／即時回復Ⅰ（アンデッド）
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..3,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 0
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..3,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 0
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..3,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 0
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..3,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 0
+#根元～1.5m: ウィザー状態＆毒状態[10 sec]（非アンデッド）／即時回復Ⅱ（アンデッド）
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..1.5,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..1.5,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..1.5,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..1.5,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake] at @s run particle dust 0.000 0.980 0.604 1 ~ ~1 ~ 3 3 3 1 400 normal @a[distance=..30]
 
 #法王の右目＆左目
 #与ダメージが発生した際に5秒間strength Ⅴ付与＆HPを回復

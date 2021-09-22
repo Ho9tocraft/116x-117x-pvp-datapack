@@ -42,6 +42,7 @@ execute if entity @e[type=armor_stand,tag=ship-sel,tag=selected,nbt={HandItems:[
 execute if entity @e[type=armor_stand,tag=ship-sel,tag=selected,nbt={HandItems:[{id:"minecraft:stick",tag:{shipIds:13},Count:1b},{}]}] as @s at @s run scoreboard players set @s ship-num 13
 execute if entity @e[type=armor_stand,tag=ship-sel,tag=selected,nbt={HandItems:[{id:"minecraft:stick",tag:{shipIds:14},Count:1b},{}]}] as @s at @s run scoreboard players set @s ship-num 14
 execute if entity @e[type=armor_stand,tag=ship-sel,tag=selected,nbt={HandItems:[{id:"minecraft:stick",tag:{shipIds:16},Count:1b},{}]}] as @s at @s run scoreboard players set @s ship-num 16
+execute if entity @e[type=armor_stand,tag=ship-sel,tag=selected,nbt={HandItems:[{id:"minecraft:stick",tag:{shipIds:17},Count:1b},{}]}] as @s at @s run scoreboard players set @s ship-num 17
 execute as @s at @s run function ship-based-pvp-datapacks:calc/ship_selection/ship-sel-result
 #endregion
 
