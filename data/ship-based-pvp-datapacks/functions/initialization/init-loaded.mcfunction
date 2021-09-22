@@ -34,6 +34,8 @@ scoreboard objectives add stage-sel-rand dummy
 scoreboard objectives add team-sel-rand dummy
 #TeamSel Randomizer 半メンバー×2
 scoreboard objectives add team-sel-rd-dob dummy
+#職業選択ランダマイザ（全メンバー）
+scoreboard objectives add ship-sel-rand dummy
 #Tokenスポーン時間ループ(鉄)
 scoreboard objectives add token-sp-iron dummy
 #Tokenスポーン時間ループ(金)
