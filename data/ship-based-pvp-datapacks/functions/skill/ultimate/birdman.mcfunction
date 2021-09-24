@@ -5,7 +5,7 @@ execute as @a[scores={ship-num=16,FocusPoint=..199,awake_gauge=1..},predicate=sh
 execute as @a[scores={ship-num=16,FocusPoint=..199,awake_gauge=1..},predicate=ship-based-pvp-datapacks:focus-point-autoregen,tag=awake] at @s run scoreboard players add @s FocusPoint 1
 
 #何秒後に切れるか分からないので60秒
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,nbt={AbsorptionAmount:0.0F}] at @s run effect give @s absorption 60 4
+execute if score #Helper tick-sec_conv matches 0 as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,nbt={AbsorptionAmount:0.0F}] at @s run effect give @s absorption 60 4
 
 #距離減衰型
 #～3m: 即時ダメージⅠ（非アンデッド）／即時回復Ⅰ（アンデッド）
@@ -23,5 +23,5 @@ execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake] at @s run particle
 #法王の右目＆左目
 #与ダメージが発生した際に5秒間strength Ⅴ付与＆HPを回復
 execute as @a[scores={ship-num=16,awake_gauge=1..,attack-det=1..},tag=awake] at @s run effect give @s strength 5 4 false
-execute as @a[scores={ship-num=16,awake_gauge=1..,attack-det=1..},tag=awake] at @s run effect give @s instant_health 1 1 false
+execute as @a[scores={ship-num=16,awake_gauge=1..,attack-det=1..},tag=awake] at @s run effect give @s instant_health 1 0 false
 
