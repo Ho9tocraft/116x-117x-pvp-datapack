@@ -42,6 +42,7 @@ execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=s
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill1-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill2-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill3-ct 5
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill4-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s killcount-Temp 0
 execute as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=spectator] at @s run gamemode adventure @s
 execute if score #Helper timer_battle matches 1..60 as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=adventure] at @s run effect give @s glowing 60 9 true

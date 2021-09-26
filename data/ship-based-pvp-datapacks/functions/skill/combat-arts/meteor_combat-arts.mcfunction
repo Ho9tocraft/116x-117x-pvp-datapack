@@ -4,6 +4,9 @@
 # 魔術師（爆弾）
 execute as @a[scores={ship-num=5,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:staff-of-meteor,team=Red] at @s as @e[team=Blue,distance=..20] at @s run summon creeper ~ ~ ~ {Silent:true,Team:"Red",ExplosionRadius:5,Fuse:10,ActiveEffects:[{Id:14b,Amplifier:0,Ambient:true,ShowParticles:false,ShowIcon:false,Duration:12000}],ignited:true}
 execute as @a[scores={ship-num=5,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:staff-of-meteor,team=Blue] at @s as @e[team=Red,distance=..20] at @s run summon creeper ~ ~ ~ {Silent:true,Team:"Blue",ExplosionRadius:5,Fuse:10,ActiveEffects:[{Id:14b,Amplifier:0,Ambient:true,ShowParticles:false,ShowIcon:false,Duration:12000}],ignited:true}
+#  FocusPointを減らす（Focus Point Remover）/CT変更（15 sec）
+execute as @a[scores={ship-num=5,skill3-ct=0,FocusPoint=20..},predicate=ship-based-pvp-datapacks:staff-of-meteor] at @s run scoreboard players remove @s FocusPoint 20
+execute as @a[scores={ship-num=5,skill3-ct=0},predicate=ship-based-pvp-datapacks:staff-of-meteor] at @s run scoreboard players set @s skill3-ct 15
 
 # 召喚士（隕石）
 #  オーナーUUIDを抽出

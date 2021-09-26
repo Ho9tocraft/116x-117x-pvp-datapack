@@ -5,7 +5,9 @@ execute as @a[scores={ship-num=16,FocusPoint=..199,awake_gauge=1..},predicate=sh
 execute as @a[scores={ship-num=16,FocusPoint=..199,awake_gauge=1..},predicate=ship-based-pvp-datapacks:focus-point-autoregen,tag=awake] at @s run scoreboard players add @s FocusPoint 1
 
 #何秒後に切れるか分からないので60秒
-execute if score #Helper tick-sec_conv matches 0 as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,nbt={AbsorptionAmount:0.0F}] at @s run effect give @s absorption 60 4
+execute if score #Helper tick-sec_conv matches 0 as @a[scores={ship-num=16,awake_gauge=800..},tag=awake,nbt={AbsorptionAmount:0.0F},tag=!armor] at @s run effect give @s absorption 60 4
+execute as @a[scores={ship-num=16},tag=!armor,nbt={ActiveEffects:[{Id:22b}]}] run tag @s add armor
+execute as @a[scores={ship-num=16},tag=armor,nbt=!{ActiveEffects:[{Id:22b}]}] run tag @s remove armor
 
 #距離減衰型
 #～3m: 即時ダメージⅠ（非アンデッド）／即時回復Ⅰ（アンデッド）

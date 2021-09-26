@@ -51,6 +51,8 @@ scoreboard objectives add flundings_token dummy
 # r: 召喚士（0～1）
 scoreboard objectives add summon_limit_n dummy
 scoreboard objectives add summon_limit_r dummy
+#頭割りカウント
+scoreboard objectives add splitting-member dummy
 #△Dummy Player[Helper]
 
 #▽Player Owned
@@ -126,6 +128,8 @@ scoreboard objectives add ship-27-win dummy
 scoreboard objectives add ship-28-win dummy
 scoreboard objectives add ship-29-win dummy
 scoreboard objectives add ship-30-win dummy
+#ステージセレクターvote
+scoreboard objectives add stage-sel-vote trigger
 #△Player Owned
 
 #一応セット

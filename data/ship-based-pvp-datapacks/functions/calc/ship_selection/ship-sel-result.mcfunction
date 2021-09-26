@@ -39,6 +39,6 @@ execute if score @s ship-num matches 18 run tellraw @s ["",{"text":"\u8077\u696d
 execute if score @s ship-num matches 19 run tellraw @s ["",{"text":"\u8077\u696d\u304c\u9078\u629e\u3055\u308c\u307e\u3057\u305f\u3002\u3042\u306a\u305f\u306f\u300c"},{"nbt":"shipData[18]","storage":"ship-based-pvp-datapacks:ship-name-data","color":"green"},{"text":"\u300d\u3067\u3059\u3002"}]
 #花の魔術師[Planned]
 execute if score @s ship-num matches 20 run tellraw @s ["",{"text":"\u8077\u696d\u304c\u9078\u629e\u3055\u308c\u307e\u3057\u305f\u3002\u3042\u306a\u305f\u306f\u300c"},{"nbt":"shipData[19]","storage":"ship-based-pvp-datapacks:ship-name-data","color":"green"},{"text":"\u300d\u3067\u3059\u3002"}]
-#あいすと氏考案ヒーラー職[Planned]
+#白魔道士[Planned]
 # execute if score @s ship-num matches 21 run tellraw @s ["",{"text":"\u8077\u696d\u304c\u9078\u629e\u3055\u308c\u307e\u3057\u305f\u3002\u3042\u306a\u305f\u306f\u300c"},{"nbt":"shipData[20]","storage":"ship-based-pvp-datapacks:ship-name-data","color":"green"},{"text":"\u300d\u3067\u3059\u3002"}]
 
