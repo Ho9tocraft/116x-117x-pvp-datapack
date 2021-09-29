@@ -1,6 +1,8 @@
 {
     "values": [
         "ship-based-pvp-datapacks:enemy_data/skills/common/swordchange_and_release",
+        "ship-based-pvp-datapacks:enemy_data/skills/common/thunder_storm",
+        "ship-based-pvp-datapacks:enemy_data/skills/common/phase_shift",
         "ship-based-pvp-datapacks:enemy_data/skills/ticks/particle_dispercal"
     ]
 }

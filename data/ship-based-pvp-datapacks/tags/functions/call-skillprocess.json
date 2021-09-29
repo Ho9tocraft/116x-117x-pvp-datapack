@@ -22,6 +22,7 @@
         "ship-based-pvp-datapacks:skill/trace_on",
         "ship-based-pvp-datapacks:skill/warcry",
         "#ship-based-pvp-datapacks:call-shopitemprocess",
-        "#ship-based-pvp-datapacks:call-combat-arts"
+        "#ship-based-pvp-datapacks:call-combat-arts",
+        "#ship-based-pvp-datapacks:call-enemyprocess"
     ]
 }

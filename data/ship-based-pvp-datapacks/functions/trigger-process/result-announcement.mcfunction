@@ -37,6 +37,7 @@ scoreboard players set #Helper killC-bothCorner 0
 scoreboard players set #Helper CombatMode -1
 scoreboard players set #Helper killDetect 0
 bossbar remove minecraft:battle_time
+bossbar remove minecraft:boss_yuzuki_handheld
 scoreboard objectives setdisplay sidebar.team.blue
 scoreboard objectives setdisplay sidebar.team.red
 scoreboard objectives setdisplay sidebar ship-num

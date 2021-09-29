@@ -20,7 +20,7 @@ execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as 
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..1.5,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s wither 10 3
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..1.5,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
 execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..1.5,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1
-execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake] at @s run particle dust 0.000 0.980 0.604 1 ~ ~1 ~ 3 3 3 1 400 normal @a[distance=..30]
+execute as @a[scores={ship-num=16,awake_gauge=1..},tag=awake] at @s run particle dust 0.000 0.980 0.604 1 ~ ~1 ~ 3 3 3 1 300 normal @a[distance=..30]
 
 #法王の右目＆左目
 #与ダメージが発生した際に5秒間strength Ⅴ付与＆HPを回復

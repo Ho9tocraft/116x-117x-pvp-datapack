@@ -3,6 +3,7 @@
         "ship-based-pvp-datapacks:calc/tick-func",
         "ship-based-pvp-datapacks:tick-process/lloyds_sword",
         "ship-based-pvp-datapacks:tick-process/lloyds_shield",
+        "ship-based-pvp-datapacks:tick-process/trident-throwing",
         "#ship-based-pvp-datapacks:call-skillprocess",
         "#ship-based-pvp-datapacks:call-awakeprocess",
         "ship-based-pvp-datapacks:tick-process/estus-usage",

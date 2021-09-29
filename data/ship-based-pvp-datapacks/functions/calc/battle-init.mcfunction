@@ -1,3 +1,5 @@
+execute if score #Helper stage-sel-result matches -1024 run team join Blue @a
+execute if score #Helper stage-sel-result matches -1024 run scoreboard players set #Helper timer_battle-max 5400
 clear @a
 execute as @a at @s run function #ship-based-pvp-datapacks:call-ship-initializer
 scoreboard players set @a awake_gauge 0

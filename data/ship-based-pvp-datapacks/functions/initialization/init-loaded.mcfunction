@@ -132,6 +132,10 @@ scoreboard objectives add ship-30-win dummy
 scoreboard objectives add stage-sel-vote trigger
 #△Player Owned
 
+#▽Enemy Owned
+scoreboard objectives add health-enemy dummy
+#△Enemy Owned
+
 #一応セット
 scoreboard objectives setdisplay sidebar ship-num
 scoreboard objectives setdisplay list ship-any-win
