@@ -48,4 +48,5 @@ execute as @a[tag=!InitComplete] at @s run advancement grant @s from minecraft:e
 execute as @a[tag=!InitComplete] at @s run advancement grant @s from minecraft:husbandry/root
 execute as @a[tag=!InitComplete] at @s run advancement grant @s from minecraft:nether/root
 execute as @a[tag=!InitComplete] at @s run advancement grant @s from minecraft:recipes/root
+execute as @a[tag=!InitComplete] at @s run effect give @s resistance 1000000 255 true
 tag @a[tag=!InitComplete] add InitComplete

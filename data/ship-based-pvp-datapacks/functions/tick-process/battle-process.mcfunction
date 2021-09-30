@@ -22,8 +22,7 @@ execute if score #Helper stage-sel-result matches -1024 store result bossbar min
 execute if score #Helper CombatMode matches 2 run function ship-based-pvp-datapacks:trigger-process/respawn-process
 
 #ボスキャラ消失時処理
-#何でや阪神関係ないやろ！！
-execute if score #Helper CombatMode matches 2 if score #Helper stage-sel-result matches -1024 if score #Helper timer_battle matches 2.. unless entity @e[type=skeleton,tag=Yuzuki_HandHeld] run scoreboard players set #Helper point-blue 334
+execute if score #Helper CombatMode matches 2 if score #Helper stage-sel-result matches -1024 if score #Helper timer_battle matches 2.. unless entity @e[type=skeleton,tag=Yuzuki_HandHeld] run scoreboard players set #Helper point-blue 32768
 execute if score #Helper CombatMode matches 2 if score #Helper stage-sel-result matches -1024 if score #Helper timer_battle matches 2.. unless entity @e[type=skeleton,tag=Yuzuki_HandHeld] run scoreboard players set #Helper timer_battle 1
 
 #コールド勝利判定（30点先取）
@@ -68,6 +67,7 @@ execute if score #Helper timer_battle matches 0 run title @a times 20 160 20
 execute if score #Helper timer_battle matches 0 unless score #Helper stage-sel-result matches -1024 unless score #Helper point-red matches 30.. unless score #Helper point-blue matches 30.. run title @a title {"text":"Time Up! The Winner is..."}
 execute if score #Helper timer_battle matches 0 unless score #Helper stage-sel-result matches -1024 unless score #Helper point-red matches 30.. unless score #Helper point-blue matches 30.. run title @a title {"text":"Time Up! The Winner is..."}
 execute if score #Helper timer_battle matches 0 unless score #Helper stage-sel-result matches -1024 unless score #Helper point-red matches ..29 unless score #Helper point-blue matches ..29 run title @a title {"text":"You're BBQed!!!","color": "red","bold": true}
+execute if score #Helper timer_battle matches 0 if score #Helper stage-sel-result matches -1024 if score #Helper point-blue matches 1.. run title @a title {"text":"LORD OF CINDER FALLEN","bold": true,"underlined": true,"color": "red"}
 #リザルト表示
 execute if score #Helper timer_battle matches 0 run schedule function ship-based-pvp-datapacks:trigger-process/result-announcement 12s append
 execute if score #Helper timer_battle matches 0 run scoreboard players set #Helper timer_battle -1

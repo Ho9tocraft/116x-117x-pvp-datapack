@@ -32,7 +32,7 @@ execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking=3},tag=Hold] at @s as @a[team=Blue] at @s run schedule function ship-based-pvp-datapacks:enemy_data/skills/after/splitting-aoe 10s
 ## 頸狩り（ランダムターゲットテレポート）
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking=4},tag=Hold] at @s run tellraw @a [{"text": "死した神稚児","color": "dark_red"},{"text": ": ","color": "white"},{"text": "その首、貰い受ける！","color": "red"}]
-execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking=4},tag=Hold] at @s run tp @s @e[team=Blue,sort=random,limit=1]
+execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking=4},tag=Hold] at @s run tp @s @e[team=Blue,sort=random,limit=1,distance=..32]
 ## 竜閃（直線方向）
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking=5},tag=Hold] at @s run tellraw @a [{"text": "死した神稚児","color": "dark_red"},{"text": ": ","color": "white"},{"text": "其は、竜をも断つ嵐の一撃…！","color": "red"}]
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0,kichigaiking=5},tag=Hold] at @s run function ship-based-pvp-datapacks:enemy_data/skills/after/straight_aoe
@@ -52,9 +52,9 @@ execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=Ready] 
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=Hold] at @s run tag @s remove Hold
 ## 発動CT処理
 #フェーズ1
-execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=!Hold] at @s if score @s health-enemy matches 7001.. run scoreboard players set @s skill1-ct 30
+execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=!Hold] at @s if score @s health-enemy matches 5601.. run scoreboard players set @s skill1-ct 30
 #フェーズ2
-execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=!Hold] at @s if score @s health-enemy matches 4001..7000 run scoreboard players set @s skill1-ct 25
+execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=!Hold] at @s if score @s health-enemy matches 2401..5600 run scoreboard players set @s skill1-ct 25
 #フェーズ3
-execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=!Hold] at @s if score @s health-enemy matches 1..4000 run scoreboard players set @s skill1-ct 20
+execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill1-ct=0},tag=!Hold] at @s if score @s health-enemy matches 1..2400 run scoreboard players set @s skill1-ct 20
 #endregion
