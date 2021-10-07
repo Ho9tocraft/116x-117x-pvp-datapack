@@ -1,6 +1,6 @@
 #時空干渉AOE
 #マーカー付与
-execute as @e[type=skeleton,tag=Yuzuki_HandHeld,scores={skill4-ct=0}] at @s run tellraw @a {"text": "死した神稚児の「時空干渉」","color": "green"}
+execute as @e[type=skeleton,tag=Yuzuki_HandHeld] at @s run tellraw @a {"text": "死した神稚児の「時空干渉」","color": "green"}
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld] at @s as @a[team=Blue,sort=random,limit=4] at @s run tag @s add BLU_DISPERSAL
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld] at @s as @r[team=Blue,tag=!BLU_DISPERSAL] at @s run tag @s add BLU_SPLITTING
 execute as @e[type=skeleton,tag=Yuzuki_HandHeld] at @s as @e[sort=random,limit=4,team=Blue,tag=!Thunder_Over] at @s run tag @s add Thunder_Over
