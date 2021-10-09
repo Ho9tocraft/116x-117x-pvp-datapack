@@ -16,5 +16,5 @@ execute as @a[scores={ship-num=18,FocusPoint=20..,skill3-ct=0},predicate=ship-ba
 execute as @a[scores={ship-num=13,FocusPoint=20..,skill3-ct=0},predicate=ship-based-pvp-datapacks:luminosite-eternelle] at @s run schedule function ship-based-pvp-datapacks:trigger-process/luminosite-eternelle-afterburner 201t append
 execute as @a[scores={ship-num=13,FocusPoint=20..,skill3-ct=0},predicate=ship-based-pvp-datapacks:luminosite-eternelle] at @s run function ship-based-pvp-datapacks:trigger-process/stun_effect
 execute as @a[scores={ship-num=13,FocusPoint=20..,skill3-ct=0},predicate=ship-based-pvp-datapacks:luminosite-eternelle] at @s run scoreboard players remove @s FocusPoint 20
-execute as @a[scores={ship-num=13,FocusPoint=20..,skill3-ct=0},predicate=ship-based-pvp-datapacks:luminosite-eternelle] at @s run scoreboard players set @s skill3-ct 240
+execute as @a[scores={ship-num=13,skill3-ct=0},predicate=ship-based-pvp-datapacks:luminosite-eternelle] at @s run scoreboard players set @s skill3-ct 80
 #endregion
