@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:beehive"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.8.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.8.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/deprived-first-win",
+    "criteria": {
+        "deprived-warcry": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

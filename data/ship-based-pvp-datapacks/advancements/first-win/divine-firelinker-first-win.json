@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_sword",
+            "nbt": "{citTexture:Tamafuri}"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.6.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.6.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "divine-firelinker-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

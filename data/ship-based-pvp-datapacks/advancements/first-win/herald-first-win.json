@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "trident"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.4.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.4.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "herald-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

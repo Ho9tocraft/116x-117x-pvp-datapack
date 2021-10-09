@@ -168,6 +168,8 @@ execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-ba
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s instant_damage 1 3 false
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s blindness 5 255 false
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run effect give @s hunger 15 255 false
+#実績解除
+execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-based-pvp-datapacks:the-end-of-the-world,advancements={ship-based-pvp-datapacks:first-win/divine-firelinker-first-win=true}] at @s run advancement grant @s only ship-based-pvp-datapacks:ship-contents/divine-firelinker-strike
 #5. FP消費（125）&CT
 execute as @a[scores={ship-num=6,skill3-ct=0,FocusPoint=125..},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players remove @s FocusPoint 125
 execute as @a[scores={ship-num=6,skill3-ct=0},predicate=ship-based-pvp-datapacks:the-end-of-the-world] at @s run scoreboard players set @s skill3-ct 45

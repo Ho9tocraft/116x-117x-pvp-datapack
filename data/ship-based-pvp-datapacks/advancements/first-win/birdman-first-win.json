@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.16.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.16.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "birdman-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

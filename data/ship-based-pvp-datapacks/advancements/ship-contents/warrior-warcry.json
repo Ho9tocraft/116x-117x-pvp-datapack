@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:prismarine_shard"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.3.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.3.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/warrior-first-win",
+    "criteria": {
+        "warcry-warrior-using": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -34,8 +34,10 @@ execute as @a[scores={ship-num=9,skill3-ct=0,FocusPoint=10..},predicate=ship-bas
 execute as @a[scores={ship-num=9,skill3-ct=0,FocusPoint=10..},predicate=ship-based-pvp-datapacks:fang-appears,team=Blue] at @s rotated ~ 0 run summon evoker_fangs ^ ^ ^15 {Tags:["Fang_Blue"],Warmup:14}
 execute as @a[scores={ship-num=9,skill3-ct=0,FocusPoint=10..},predicate=ship-based-pvp-datapacks:fang-appears,team=Blue] at @s rotated ~ 0 run summon evoker_fangs ^ ^ ^16 {Tags:["Fang_Blue"],Warmup:15}
 
-execute as @e[type=evoker_fangs,tag=Fang_Red,nbt={Warmup:0}] at @s as @e[distance=..2,team=Blue] at @s run effect give @s instant_damage 1 2 false
-execute as @e[type=evoker_fangs,tag=Fang_Blue,nbt={Warmup:0}] at @s as @e[distance=..2,team=Red] at @s run effect give @s instant_damage 1 2 false
+execute as @e[type=evoker_fangs,tag=Fang_Red,nbt={Warmup:0}] at @s as @e[distance=..2,team=Blue,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 2 false
+execute as @e[type=evoker_fangs,tag=Fang_Blue,nbt={Warmup:0}] at @s as @e[distance=..2,team=Red,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 2 false
+execute as @e[type=evoker_fangs,tag=Fang_Red,nbt={Warmup:0}] at @s as @e[distance=..2,team=Blue,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 2 false
+execute as @e[type=evoker_fangs,tag=Fang_Blue,nbt={Warmup:0}] at @s as @e[distance=..2,team=Red,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 2 false
 execute as @e[type=evoker_fangs,tag=Fang_Red,nbt={Warmup:0}] at @s as @e[distance=..2,team=Blue] at @s run effect give @s slowness 3 3 false
 execute as @e[type=evoker_fangs,tag=Fang_Blue,nbt={Warmup:0}] at @s as @e[distance=..2,team=Red] at @s run effect give @s slowness 3 3 false
 

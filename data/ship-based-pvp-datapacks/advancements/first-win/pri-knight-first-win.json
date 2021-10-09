@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_sword",
+            "nbt": "{citTexture:NamelessKing}"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.11.title", "color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.11.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "princess-knight-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

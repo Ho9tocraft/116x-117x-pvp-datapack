@@ -20,10 +20,10 @@ execute as @e[type=arrow,nbt={inGround:true}] at @s run data modify entity @s pi
 kill @e[type=arrow,nbt={inGround:true,life:100s}]
 
 #覚醒ゲージチャージ: 覚醒ゲージのチャージングを実行する。
-execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 5 run scoreboard players add @s awake_gauge 1
-execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players add @s awake_gauge 1
-execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 15 run scoreboard players add @s awake_gauge 1
-execute if score #Helper CombatMode matches 1..2 as @a[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 20 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 1..2 as @e[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 5 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 1..2 as @e[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 10 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 1..2 as @e[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 15 run scoreboard players add @s awake_gauge 1
+execute if score #Helper CombatMode matches 1..2 as @e[scores={awake_gauge=..1599}] at @s if score #Helper tick-sec_conv matches 20 run scoreboard players add @s awake_gauge 1
 
 #FCS: 索敵レーダー
 execute if score #Helper CombatMode matches 1..2 as @a[scores={ship-num=1..},team=Red] at @s if score #Helper tick-sec_conv matches 10 if entity @a[scores={ship-num=1..},team=Blue,distance=15..30] run playsound block.note_block.harp master @s ~ ~ ~ 100 1.0 1.0

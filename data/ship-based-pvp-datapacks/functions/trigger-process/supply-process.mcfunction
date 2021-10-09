@@ -2,6 +2,7 @@
 
 execute if score #Helper stage-sel-result matches 0 run function ship-based-pvp-datapacks:trigger-process/supply/stage-0
 execute if score #Helper stage-sel-result matches 1 run function ship-based-pvp-datapacks:trigger-process/supply/stage-1
+execute if score #Helper stage-sel-result matches 2 run function ship-based-pvp-datapacks:trigger-process/supply/stage-2
 
 #サプライが来たぞ！
 #Supplies has arrived

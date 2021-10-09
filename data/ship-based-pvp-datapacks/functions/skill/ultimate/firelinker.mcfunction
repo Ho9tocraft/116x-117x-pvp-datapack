@@ -15,4 +15,9 @@ execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake,team=Red] at @s as @
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=!#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_damage 1 1 false
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake,team=Red] at @s as @e[team=Blue,distance=..4,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1 false
 execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake,team=Blue] at @s as @e[team=Red,distance=..4,type=#ship-based-pvp-datapacks:undead] at @s run effect give @s instant_health 1 1 false
-execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run particle dust 0.000 0.980 0.604 1 ~ ~1 ~ 5 5 5 1 400 normal @a[distance=..30]
+execute as @a[scores={ship-num=6,awake_gauge=1..},tag=awake] at @s run particle dust 0.918 0.333 0.024 1 ~ ~1 ~ 5 5 5 1 400 normal @a[distance=..30]
+
+#効果が似通っているので、死霊術師（ship-num:17）の覚醒も記述する
+execute as @a[scores={ship-num=17,awake_gauge=1..},tag=awake] at @s run effect give @s regeneration 4 3 false
+execute as @a[scores={ship-num=17,awake_gauge=1..},tag=awake] at @s run effect give @s speed 30 3 false
+execute as @a[scores={ship-num=17,awake_gauge=1..},tag=awake] at @s run effect give @s dolphins_grace 30 3 false

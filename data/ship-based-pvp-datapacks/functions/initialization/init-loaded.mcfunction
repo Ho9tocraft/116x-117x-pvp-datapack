@@ -34,6 +34,8 @@ scoreboard objectives add stage-sel-rand dummy
 scoreboard objectives add team-sel-rand dummy
 #TeamSel Randomizer 半メンバー×2
 scoreboard objectives add team-sel-rd-dob dummy
+#職業選択ランダマイザ（全メンバー）
+scoreboard objectives add ship-sel-rand dummy
 #Tokenスポーン時間ループ(鉄)
 scoreboard objectives add token-sp-iron dummy
 #Tokenスポーン時間ループ(金)
@@ -44,6 +46,13 @@ scoreboard objectives add token-sp-diamond dummy
 scoreboard objectives add token-phase dummy
 #FLU演算トークン
 scoreboard objectives add flundings_token dummy
+#召喚系職業召喚制限（0～4）
+# n: 死霊術師（0～4）
+# r: 召喚士（0～1）
+scoreboard objectives add summon_limit_n dummy
+scoreboard objectives add summon_limit_r dummy
+#頭割りカウント
+scoreboard objectives add splitting-member dummy
 #△Dummy Player[Helper]
 
 #▽Player Owned
@@ -67,6 +76,8 @@ scoreboard objectives add skill1-ct dummy
 scoreboard objectives add skill2-ct dummy
 #スキル3CT(0～)
 scoreboard objectives add skill3-ct dummy
+#スキル4CT(0～)
+scoreboard objectives add skill4-ct dummy
 #STゲージ（※満腹度）
 scoreboard objectives add stamina food
 #盾受け
@@ -85,10 +96,49 @@ scoreboard objectives add attack-det minecraft.custom:damage_dealt
 scoreboard objectives add team-sel-rd-res dummy
 #readycheck判定用
 scoreboard objectives add readycheck trigger
+#職業データ別勝利回数
+scoreboard objectives add ship-any-win dummy
+scoreboard objectives add ship-01-win dummy
+scoreboard objectives add ship-02-win dummy
+scoreboard objectives add ship-03-win dummy
+scoreboard objectives add ship-04-win dummy
+scoreboard objectives add ship-05-win dummy
+scoreboard objectives add ship-06-win dummy
+scoreboard objectives add ship-07-win dummy
+scoreboard objectives add ship-08-win dummy
+scoreboard objectives add ship-09-win dummy
+scoreboard objectives add ship-10-win dummy
+scoreboard objectives add ship-11-win dummy
+scoreboard objectives add ship-12-win dummy
+scoreboard objectives add ship-13-win dummy
+scoreboard objectives add ship-14-win dummy
+scoreboard objectives add ship-15-win dummy
+scoreboard objectives add ship-16-win dummy
+scoreboard objectives add ship-17-win dummy
+scoreboard objectives add ship-18-win dummy
+scoreboard objectives add ship-19-win dummy
+scoreboard objectives add ship-20-win dummy
+scoreboard objectives add ship-21-win dummy
+scoreboard objectives add ship-22-win dummy
+scoreboard objectives add ship-23-win dummy
+scoreboard objectives add ship-24-win dummy
+scoreboard objectives add ship-25-win dummy
+scoreboard objectives add ship-26-win dummy
+scoreboard objectives add ship-27-win dummy
+scoreboard objectives add ship-28-win dummy
+scoreboard objectives add ship-29-win dummy
+scoreboard objectives add ship-30-win dummy
+#ステージセレクターvote
+scoreboard objectives add stage-sel-vote trigger
 #△Player Owned
+
+#▽Enemy Owned
+scoreboard objectives add health-enemy dummy
+#△Enemy Owned
 
 #一応セット
 scoreboard objectives setdisplay sidebar ship-num
+scoreboard objectives setdisplay list ship-any-win
 
 #▽Team Detector
 team add Red {"text": "赤チーム"}

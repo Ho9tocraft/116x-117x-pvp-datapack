@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "iron_sword"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.1.title", "color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.1.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "knight-first-win":{
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,6 +1,7 @@
 {
     "values": [
         "ship-based-pvp-datapacks:skill/arrow-regen",
+        "ship-based-pvp-datapacks:skill/assalt-cannon",
         "ship-based-pvp-datapacks:skill/carthus-rouge",
         "ship-based-pvp-datapacks:skill/condense_mind",
         "ship-based-pvp-datapacks:skill/crossbow-recharger",
@@ -13,6 +14,7 @@
         "ship-based-pvp-datapacks:skill/sacred-oath",
         "ship-based-pvp-datapacks:skill/soothing-sunlight",
         "ship-based-pvp-datapacks:skill/summon-attacker",
+        "ship-based-pvp-datapacks:skill/summon-undead",
         "ship-based-pvp-datapacks:skill/sunlight-spear",
         "ship-based-pvp-datapacks:skill/tears-of-denial",
         "ship-based-pvp-datapacks:skill/the-end-of-the-world",
@@ -20,6 +22,7 @@
         "ship-based-pvp-datapacks:skill/trace_on",
         "ship-based-pvp-datapacks:skill/warcry",
         "#ship-based-pvp-datapacks:call-shopitemprocess",
-        "#ship-based-pvp-datapacks:call-combat-arts"
+        "#ship-based-pvp-datapacks:call-combat-arts",
+        "#ship-based-pvp-datapacks:call-enemyprocess"
     ]
 }

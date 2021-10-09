@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:nether_quartz_ore"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.8.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.8.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "deprived-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

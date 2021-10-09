@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bone_block"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.skilluse.7.title"},
+        "frame": "goal",
+        "description": {"translate": "advancement.shipbasedpvp.skilluse.7.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:first-win/harrowed-hunter-first-win",
+    "criteria": {
+        "harrowed-bone": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.17.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.17.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "necromancer-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

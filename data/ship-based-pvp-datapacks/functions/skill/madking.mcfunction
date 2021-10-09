@@ -13,7 +13,7 @@ execute as @a[scores={skill3-ct=0,ship-num=10,FocusPoint=20..,KK_RESULT=1},predi
 execute as @a[scores={skill3-ct=0,ship-num=10,FocusPoint=20..,KK_RESULT=2},predicate=ship-based-pvp-datapacks:madking] at @s run function ship-based-pvp-datapacks:skill/madking/curse
 
 execute as @a[scores={skill3-ct=0,ship-num=10,FocusPoint=20..},predicate=ship-based-pvp-datapacks:madking] at @s run scoreboard players remove @s FocusPoint 20
-execute as @a[scores={skill3-ct=0,ship-num=10},predicate=ship-based-pvp-datapacks:madking] at @s run scoreboard players set @s skill3-ct 15
+execute as @a[scores={skill3-ct=0,ship-num=10},predicate=ship-based-pvp-datapacks:madking] at @s run scoreboard players set @s skill3-ct 40
 execute as @a[scores={skill3-ct=..5,ship-num=10,FocusPoint=..19}] at @s run scoreboard players set @s skill3-ct 5
 
 

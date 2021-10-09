@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "iron_axe",
+            "nbt": "{citTexture:Warrior}"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.3.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.3.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "warrior-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

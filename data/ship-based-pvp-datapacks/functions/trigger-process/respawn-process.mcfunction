@@ -35,6 +35,7 @@ execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=s
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s minecraft:health_boost 1000000 4 true
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s minecraft:instant_health 20 9 true
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run effect give @s resistance 10 5 true
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s if score #Helper stage-sel-result matches -1024 run effect give @s weakness 120 0 false
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run give @s cooked_beef 4
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players add @s[scores={awake_gauge=..1200}] awake_gauge 400
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run title @s times 0 100 40
@@ -42,6 +43,7 @@ execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=s
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill1-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill2-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill3-ct 5
+execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s skill4-ct 5
 execute as @a[scores={ship-num=1..,killcount-Temp=1..,respawn-time=0},gamemode=spectator] at @s run scoreboard players set @s killcount-Temp 0
 execute as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=spectator] at @s run gamemode adventure @s
 execute if score #Helper timer_battle matches 1..60 as @a[scores={ship-num=1..,killcount-Temp=0,respawn-time=0},gamemode=adventure] at @s run effect give @s glowing 60 9 true

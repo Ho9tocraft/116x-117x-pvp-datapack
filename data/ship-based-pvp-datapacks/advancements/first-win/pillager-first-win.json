@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald_block"
+        },
+        "title": {"translate": "advancement.shipbasedpvp.firstwin.9.title","color": "green"},
+        "frame": "challenge",
+        "description": {"translate": "advancement.shipbasedpvp.firstwin.9.description"}
+    },
+    "parent": "ship-based-pvp-datapacks:root",
+    "criteria": {
+        "pillager-first-win": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
