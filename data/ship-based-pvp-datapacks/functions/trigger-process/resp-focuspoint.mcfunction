@@ -16,9 +16,9 @@ execute as @s[scores={ship-num=11}] at @s run function ship-based-pvp-datapacks:
 execute as @s[scores={ship-num=12}] at @s run function ship-based-pvp-datapacks:ship/cg/cg_init
 execute as @s[scores={ship-num=13}] at @s run function ship-based-pvp-datapacks:ship/summoner/summoner_init
 execute as @s[scores={ship-num=14}] at @s run function ship-based-pvp-datapacks:ship/dancer/dancer_init
-#execute as @s[scores={ship-num=15}] at @s run function ship-based-pvp-datapacks:ship/dancer/dancer_init
+#execute as @s[scores={ship-num=15}] at @s run function ship-based-pvp-datapacks:ship/bomberman/bomberman_init
 execute as @s[scores={ship-num=16}] at @s run function ship-based-pvp-datapacks:ship/birdman/birdman_init
 execute as @s[scores={ship-num=17}] at @s run function ship-based-pvp-datapacks:ship/necromancer/necromancer_init
-#execute as @s[scores={ship-num=18}] at @s run function ship-based-pvp-datapacks:ship/necromancer/necromancer_init
+execute as @s[scores={ship-num=18}] at @s run function ship-based-pvp-datapacks:ship/ruler/ruler_init
 #execute as @s[scores={ship-num=19}] at @s run function ship-based-pvp-datapacks:ship/necromancer/necromancer_init
 #execute as @s[scores={ship-num=20}] at @s run function ship-based-pvp-datapacks:ship/necromancer/necromancer_init
