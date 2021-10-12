@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["creeper_head"],
+            "nbt": "{citTexture:Bomberman}"
+        }},
+        "flags": {"is_sneaking": true}
+    }
+}
