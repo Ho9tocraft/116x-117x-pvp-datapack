@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {"mainhand": {
+            "items": ["fire_charge"],
+            "nbt": "{citTexture:Bomberman}"
+        }}
+    }
+}
