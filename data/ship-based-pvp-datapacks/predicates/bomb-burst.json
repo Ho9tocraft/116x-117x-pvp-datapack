@@ -5,6 +5,7 @@
         "equipment": {"mainhand": {
             "items": ["fire_charge"],
             "nbt": "{citTexture:Bomberman}"
-        }}
+        }},
+        "flags": {"is_sneaking": true}
     }
 }
